@@ -1,0 +1,56 @@
+disabled_rules:
+- trailing_whitespace
+- vertical_whitespace
+- trailing_newline
+- nesting
+- trailing_closure
+- todo
+- type_contents_order
+- type_name
+- file_types_order
+- identifier_name
+- switch_case_alignment
+- force_unwrapping
+- force_cast
+- force_try
+- cyclomatic_complexity
+- file_length
+
+opt_in_rules:
+- empty_string
+- empty_count
+- empty_collection_literal
+- trailing_closure
+- unowned_variable_capture
+- unused_import
+- first_where
+- last_where
+- contains_over_first_not_nil
+- type_contents_order
+
+line_length:
+- 200   # warning
+
+function_body_length:
+- 100   # warning
+
+identifier_name:
+  min_length:
+    error: 1
+  excluded:
+    - id
+    - db
+    - URL
+    - x
+    - y
+    - vc
+    - on
+
+excluded:
+- Carthage/
+- Cartfile
+- Cartfile.resolved
+- R.generated.swift
+- Pods
+- SourcePackages
+- Tools
