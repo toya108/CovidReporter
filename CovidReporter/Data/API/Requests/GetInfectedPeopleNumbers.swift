@@ -5,6 +5,9 @@ struct GetInfectedPeopleNumbers: RequestProtocol {
     let parameters: Parameters
     var method: HTTPMethod { .get }
     var query: String? { "date" }
+    var testDataPath: URL? {
+        Bundle.main.url(forResource: "MockInfectedPeopleNumbers", withExtension: "json")
+    }
 
     init(parameters: Parameters) {
         self.parameters = parameters
@@ -13,7 +16,7 @@ struct GetInfectedPeopleNumbers: RequestProtocol {
 
 extension GetInfectedPeopleNumbers {
     struct Parameters: Codable {
-        let date: String
-        let dataName: String
+        let date: String?
+        let dataName: String?
     }
 }
