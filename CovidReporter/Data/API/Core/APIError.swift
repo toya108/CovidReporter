@@ -3,6 +3,7 @@ import Foundation
 public enum APIError: LocalizedError {
     case unknown
     case invalidRequest
+    case missingTestJsonDataPath
     case responseError(Error)
     case httpError(status: Int)
     case offline
@@ -16,6 +17,9 @@ public enum APIError: LocalizedError {
 
             case .invalidRequest:
                 return "invalid request"
+
+            case .missingTestJsonDataPath:
+                return "missing test json data path"
 
             case let .responseError(error):
                 return "response error occured, error: \(error.localizedDescription)"

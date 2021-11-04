@@ -12,6 +12,10 @@ protocol RequestProtocol {
     var baseURL: String { get }
     var path: String { get }
 
+    #if DEBUG
+    var testDataPath: URL? { get }
+    #endif
+
     init(parameters: Parameters)
 }
 

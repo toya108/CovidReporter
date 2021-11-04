@@ -2,7 +2,17 @@ import Foundation
 
 struct APIClient {
     
-    func request<R: RequestProtocol, T>(item: R) async throws -> T where R.Response == T {
+    func request<R: RequestProtocol, T: Decodable>(
+        item: R,
+        shouldUseTestData: Bool
+    ) async throws -> T {
+
+        #if DEBUG
+        if shouldUseTestData {
+            let testDataFetchRequest = FetchTestDataRequest(testDataJsonPath: item.testDataPath)
+            return try testDataFetchRequest.fetchLocalTestData(responseType: T.self)
+        }
+        #endif
 
         let urlRequest = try await createURLRequest(item)
 
