@@ -1,5 +1,5 @@
 struct Repositories {
-    struct InfectedPeopleNumbers {
-        typealias Get = Repository<GetInfectedPeopleNumbers>
+    struct InfectionNumbers {
+        typealias Get = Repository<GetInfectionNumbers>
     }
 }
