@@ -3,19 +3,17 @@ import SwiftUI
 
 struct BarChart: UIViewRepresentable {
 
-    @Binding var entries: [BarChartDataEntry]
+    @Binding var dataSource: BarChartDataSource
 
     typealias UIViewType = BarChartView
 
-    init(entries: Binding<[BarChartDataEntry]>) {
-        self._entries = entries
+    init(dataSource: Binding<BarChartDataSource>) {
+        self._dataSource = dataSource
     }
 
     func makeUIView(context: Context) -> BarChartView {
         let chart = BarChartView()
-        chart.data = data
         chart.xAxis.labelPosition = .bottom
-        chart.xAxis.valueFormatter = DateValueFormatter(startDate: Date())
         chart.xAxis.granularity = 1.0
         chart.xAxis.drawGridLinesEnabled = false
         chart.xAxis.drawAxisLineEnabled = false
@@ -30,10 +28,11 @@ struct BarChart: UIViewRepresentable {
 
     func updateUIView(_ uiView: BarChartView, context: Context) {
         uiView.data = data
+        uiView.xAxis.valueFormatter = dataSource.dateValueFormatter
     }
 
     private var data: ChartData {
-        let dataSet = BarChartDataSet(entries: entries)
+        let dataSet = BarChartDataSet(entries: dataSource.dataEntryConvertibles.entries)
         let data = BarChartData(dataSet: dataSet)
         return data
     }

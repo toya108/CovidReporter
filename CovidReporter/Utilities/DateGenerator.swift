@@ -15,7 +15,7 @@ struct DateGenerator {
         }
     }
 
-    private static func generatePastDay(from date: Date, to: Int) -> Date? {
+    static func generatePastDay(from date: Date, to: Int) -> Date? {
         calendar.date(byAdding: .day, value: -to, to: date)
     }
 

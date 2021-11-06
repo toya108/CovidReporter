@@ -4,59 +4,79 @@ import Charts
 
 final class InfectionChartViewModel: ObservableObject {
 
-    @Published var entries: [BarChartDataEntry] = []
+    @Published var dataSource: BarChartDataSource = .init()
     @Published var error: Error?
 
-    let prefecture: Prefecture
-    let getInfectionNumbersRepository: Repositories.InfectionNumbers.Get
+    let getInfectionNumbersRepository: Repositories.InfectionNumbers.Prefecture.Get
+    let getAllInfectionNumbersRepository: Repositories.InfectionNumbers.All.Get
 
     init(
-        prefecture: Prefecture,
-        getInfectionNumbersRepository: Repositories.InfectionNumbers.Get
+        getInfectionNumbersRepository: Repositories.InfectionNumbers.Prefecture.Get,
+        getAllInfectionNumbersRepository: Repositories.InfectionNumbers.All.Get
     ) {
-        self.prefecture = prefecture
         self.getInfectionNumbersRepository = getInfectionNumbersRepository
+        self.getAllInfectionNumbersRepository = getAllInfectionNumbersRepository
     }
 
-    @MainActor func fetchAllInfectionNumbers() async {
+    func fetchInfectionNumbers(prefecture: Prefecture) async {
+        prefecture == .all
+        ? await fetchAllInfectionNumbers()
+        : await fetchInfectionNumbers(per: prefecture)
+    }
 
-        let sevenDays = DateGenerator.generatePastDays(from: Date(), difference: 2, to: 7).map {
+    private func fetchAllInfectionNumbers() async {
+
+        do {
+            let infectionNumbers = try await getAllInfectionNumbersRepository.request()
+            let latest = Array(infectionNumbers.suffix(7))
+            self.dataSource = .init(dataEntryConvertibles: latest)
+        } catch {
+            self.error = error
+        }
+    }
+
+    private func fetchInfectionNumbers(per prefecture: Prefecture) async {
+
+        let days = DateGenerator.generatePastDays(from: Date(), difference: 1, to: 8).map {
             DateConverter.convert(from: $0).filter { $0 != "/" }
         }
 
         do {
             async let first = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[0])
+                parameters: .init(date: days[0], dataName: prefecture.rawValue)
             )
             async let second = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[1])
+                parameters: .init(date: days[1], dataName: prefecture.rawValue)
             )
             async let third = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[2])
+                parameters: .init(date: days[2], dataName: prefecture.rawValue)
             )
             async let fourth = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[3])
+                parameters: .init(date: days[3], dataName: prefecture.rawValue)
             )
             async let fifth = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[4])
+                parameters: .init(date: days[4], dataName: prefecture.rawValue)
             )
             async let sixth = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[5])
+                parameters: .init(date: days[5], dataName: prefecture.rawValue)
             )
             async let seventh = self.getInfectionNumbersRepository.request(
-                parameters: .init(date: sevenDays[6])
+                parameters: .init(date: days[6], dataName: prefecture.rawValue)
+            )
+            async let eigth = self.getInfectionNumbersRepository.request(
+                parameters: .init(date: days[7], dataName: prefecture.rawValue)
             )
 
-            self.entries = try await [first, second, third, fourth, fifth, sixth, seventh]
-                .reversed()
-                .enumerated()
-                .map { offset, element in
-                    let infectionNumberPerDay = ToAllInfectionNumbers.map(from: element)
-                    return .init(
-                        x: Double(offset),
-                        y: Double(infectionNumberPerDay.infectionNumber)
-                    )
-                }
+            let infectionNumbers = try await [
+                eigth, seventh, sixth, fifth, fourth, third, second, first
+            ]
+            let dataEntryConvertibles = AdpatientsCalculator.addAdpatients(from: infectionNumbers)
+            DispatchQueue.main.async { [weak self] in
+                
+                guard let self = self else { return }
+
+                self.dataSource = .init(dataEntryConvertibles: dataEntryConvertibles)
+            }
 
         } catch {
             self.error = error
