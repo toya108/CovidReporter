@@ -1,4 +1,5 @@
 import SwiftUI
+import SkeletonUI
 
 struct InfectionChartView: View {
 
@@ -24,7 +25,9 @@ struct InfectionChartView: View {
                     }
                 }
             case .loading:
-                Color.clear
+                Color.clear.skeleton(with: true)
+                    .shape(type: .rectangle)
+                    .multiline(lines: 5, spacing: 4)
 
             case .finished(let dataSource):
                 VStack(alignment: .leading) {
