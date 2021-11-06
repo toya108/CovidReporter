@@ -1,4 +1,9 @@
-enum Prefecture: String, CaseIterable, Decodable {
+enum Prefecture: String, CaseIterable, Codable, Identifiable {
+
+    var id: Self {
+        self
+    }
+
     case all = "全国"
     case hokkaido = "北海道"
     case aomori = "青森県"
