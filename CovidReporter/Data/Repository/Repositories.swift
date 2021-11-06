@@ -9,5 +9,7 @@ struct Repositories {
     }
     struct Prefectures {
         typealias Get = Repository<GetPrefecturesRequest>
+        typealias Set = Repository<SetPrefecturesRequest>
+        typealias Delete = Repository<DeletePrefecturesRequest>
     }
 }

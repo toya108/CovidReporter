@@ -38,7 +38,7 @@ protocol UserDefaultConvertible {
     func toUserDefaultObject() -> Any?
 }
 
-extension Prefecture: UserDefaultConvertible {
+extension String: UserDefaultConvertible {
     init?(with object: Any) {
         guard
             let value = object as? Self

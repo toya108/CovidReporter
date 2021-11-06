@@ -6,7 +6,7 @@ public struct GetPrefecturesRequest: LocalRequest {
 
     var parameters: EmptyParameters
 
-    var localDataInterceptor: (EmptyParameters) -> [Prefecture]? {{ _ in
-        LocalDataHolder.prefectures
-    }}
+    func intercept(_ parameter: EmptyParameters) -> [Prefecture]? {
+        LocalDataHolder.prefectures?.compactMap { Prefecture(rawValue: $0) }
+    }
 }
