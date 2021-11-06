@@ -19,6 +19,7 @@ struct BarChart: UIViewRepresentable {
         chart.xAxis.granularity = 1.0
         chart.xAxis.drawGridLinesEnabled = false
         chart.xAxis.drawAxisLineEnabled = false
+        chart.leftAxis.axisMinimum = 0.0
         chart.leftAxis.drawZeroLineEnabled = true
         chart.leftAxis.drawAxisLineEnabled = false
         chart.rightAxis.enabled = false
