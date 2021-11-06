@@ -55,7 +55,23 @@ struct InfectionChartView: View {
                 .padding(4)
 
             case .failed(let error):
-                Color.clear
+                VStack(alignment: .center, spacing: 8) {
+                    Button(
+                        action: {
+                            Task {
+                                await viewModel.fetchInfectionNumbers(prefecture: self.prefecture)
+                            }
+                        },
+                        label: {
+                            Image(systemName: "arrow.clockwise.circle.fill")
+                                .foregroundColor(Color(uiColor: .systemTeal))
+                        }
+                    )
+                    Text("データの取得に失敗しました。\n reason: \(error.localizedDescription)")
+                        .multilineTextAlignment(.center)
+                        .font(Font.system(size: 11))
+                }
+                .frame(maxWidth: .infinity)
         }
     }
 }
