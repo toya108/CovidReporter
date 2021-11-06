@@ -1,9 +1,6 @@
 import Foundation
 
-protocol RequestProtocol {
-    associatedtype Response: Decodable
-    associatedtype Parameters: Encodable
-
+protocol APIRequestProtocol: RequestProtocol {
     var headers: [String: String] { get }
     var method: HTTPMethod { get }
     var parameters: Parameters { get }
@@ -11,7 +8,6 @@ protocol RequestProtocol {
     var body: Data { get throws }
     var baseURL: String { get }
     var path: String { get }
-    var localDataInterceptor: (Parameters) -> Response? { get }
 
     #if DEBUG
     var testDataPath: URL? { get }
@@ -20,7 +16,7 @@ protocol RequestProtocol {
     init(parameters: Parameters)
 }
 
-extension RequestProtocol {
+extension APIRequestProtocol {
 
     var baseURL: String {
         "https://opendata.corona.go.jp/api/Covid19JapanAll"

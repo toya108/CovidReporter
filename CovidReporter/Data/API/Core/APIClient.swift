@@ -2,7 +2,7 @@ import Foundation
 
 struct APIClient {
     
-    func request<R: RequestProtocol, T: Decodable>(
+    func request<R: APIRequestProtocol, T: Decodable>(
         item: R,
         shouldUseTestData: Bool
     ) async throws -> T {
@@ -48,7 +48,7 @@ struct APIClient {
         }
     }
 
-    private func createURLRequest<R: RequestProtocol>(_ requestItem: R) async throws -> URLRequest {
+    private func createURLRequest<R: APIRequestProtocol>(_ requestItem: R) async throws -> URLRequest {
         
         guard
             let fullPath = URL(string: requestItem.baseURL + requestItem.path)

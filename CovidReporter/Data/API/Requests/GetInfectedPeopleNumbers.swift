@@ -1,6 +1,6 @@
 import Foundation
 
-struct GetInfectionNumbers: RequestProtocol {
+struct GetInfectionNumbers: APIRequestProtocol {
     typealias Response = InfectionNumbers
     let parameters: Parameters
     var method: HTTPMethod { .get }
