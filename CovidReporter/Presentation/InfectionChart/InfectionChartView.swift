@@ -18,7 +18,7 @@ struct InfectionChartView: View {
                 Text(prefecture.rawValue).fontWeight(.heavy)
                 Spacer()
                 Text(
-                    "新規感染者数+\(Int(viewModel.dataSource.latestAdpatients))(\(viewModel.dataSource.latestDate))"
+                    "\(viewModel.dataSource.latestDate) 新規感染者数(\(Int(viewModel.dataSource.latestAdpatients)))"
                 )
             }
             BarChart(dataSource: $viewModel.dataSource)
