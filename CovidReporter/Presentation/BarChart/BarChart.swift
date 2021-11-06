@@ -33,6 +33,7 @@ struct BarChart: UIViewRepresentable {
 
     private var data: ChartData {
         let dataSet = BarChartDataSet(entries: dataSource.dataEntryConvertibles.entries)
+        dataSet.colors = [.systemTeal]
         dataSet.valueFont = NSUIFont.systemFont(ofSize: 10)
         let data = BarChartData(dataSet: dataSet)
         return data

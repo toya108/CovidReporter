@@ -23,8 +23,8 @@ struct SelectingPrefectureMenu: View {
                 HStack {
                     Spacer()
                     Image(systemName: "plus.circle.fill")
-                        .foregroundColor(Color(uiColor: .label))
                         .frame(height: 64)
+                        .foregroundColor(Color(uiColor: .systemTeal))
                     Spacer()
                 }
             }

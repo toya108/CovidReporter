@@ -12,7 +12,8 @@ struct ChartListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.prefectures) {
-                    InfectionChartView(prefecture: $0).frame(height: 250)
+                    InfectionChartView(prefecture: $0, parentViewModel: viewModel)
+                        .frame(height: 250)
                 }
                 SelectingPrefectureMenu(viewModel: viewModel)
             }
@@ -23,7 +24,8 @@ struct ChartListView: View {
 
                     },
                     label: {
-                        Image(systemName: "gear").foregroundColor(Color(uiColor: .label))
+                        Image(systemName: "gear")
+                            .foregroundColor(Color(uiColor: .label))
                     }
                 )
             )
