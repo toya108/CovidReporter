@@ -1,4 +1,3 @@
-
 import Foundation
 
 protocol RequestProtocol {
@@ -6,10 +5,6 @@ protocol RequestProtocol {
     associatedtype Parameters: Encodable
 
     var parameters: Parameters { get }
-
-#if DEBUG
-    var testDataPath: URL? { get }
-#endif
 
     init(parameters: Parameters)
 }
