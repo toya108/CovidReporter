@@ -15,34 +15,45 @@ struct InfectionChartView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(prefecture.rawValue).fontWeight(.heavy)
-                Spacer()
-                Text(
-                    "\(viewModel.dataSource.latestDate) 新規感染者数(\(Int(viewModel.dataSource.latestAdpatients)))"
-                )
-                if prefecture != .all {
-                    Button(
-                        action: {
-                            parentViewModel.delete(prefecture: self.prefecture)
-                            parentViewModel.updatePrefectures()
-                        },
-                        label: {
-                            Image(systemName: "x.circle.fill")
-                                .foregroundColor(Color(uiColor: .systemTeal))
-                        }
-                    ).buttonStyle(.plain)
-                }
-            }
-            BarChart(dataSource: $viewModel.dataSource)
-                .onAppear {
+
+        switch viewModel.state {
+            case .standby:
+                Color.clear.onAppear {
                     Task {
                         await viewModel.fetchInfectionNumbers(prefecture: prefecture)
                     }
                 }
+            case .loading:
+                Color.clear
+
+            case .finished(let dataSource):
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(prefecture.rawValue).fontWeight(.heavy)
+                        Spacer()
+                        Text(
+                            "\(dataSource.latestDate) 新規感染者数(\(Int(dataSource.latestAdpatients)))"
+                        )
+                        if prefecture != .all {
+                            Button(
+                                action: {
+                                    parentViewModel.delete(prefecture: self.prefecture)
+                                    parentViewModel.updatePrefectures()
+                                },
+                                label: {
+                                    Image(systemName: "x.circle.fill")
+                                        .foregroundColor(Color(uiColor: .systemTeal))
+                                }
+                            ).buttonStyle(.plain)
+                        }
+                    }
+                    BarChart(dataSource: dataSource)
+                }
+                .padding(4)
+
+            case .failed(let error):
+                Color.clear
         }
-        .padding(4)
     }
 }
 

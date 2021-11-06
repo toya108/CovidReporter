@@ -3,12 +3,12 @@ import SwiftUI
 
 struct BarChart: UIViewRepresentable {
 
-    @Binding var dataSource: BarChartDataSource
+    var dataSource: BarChartDataSource
 
     typealias UIViewType = BarChartView
 
-    init(dataSource: Binding<BarChartDataSource>) {
-        self._dataSource = dataSource
+    init(dataSource: BarChartDataSource) {
+        self.dataSource = dataSource
     }
 
     func makeUIView(context: Context) -> BarChartView {

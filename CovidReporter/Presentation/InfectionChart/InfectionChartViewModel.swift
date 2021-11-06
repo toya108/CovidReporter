@@ -4,8 +4,7 @@ import Charts
 
 final class InfectionChartViewModel: ObservableObject {
 
-    @Published var dataSource: BarChartDataSource = .init()
-    @Published var error: Error?
+    @Published var state: LoadingState<BarChartDataSource> = .standby
 
     let getInfectionNumbersRepository: Repositories.InfectionNumbers.Prefecture.Get
     let getAllInfectionNumbersRepository: Repositories.InfectionNumbers.All.Get
@@ -19,6 +18,9 @@ final class InfectionChartViewModel: ObservableObject {
     }
 
     func fetchInfectionNumbers(prefecture: Prefecture) async {
+
+        self.state = .loading
+
         prefecture == .all
         ? await fetchAllInfectionNumbers()
         : await fetchInfectionNumbers(per: prefecture)
@@ -29,9 +31,9 @@ final class InfectionChartViewModel: ObservableObject {
         do {
             let infectionNumbers = try await getAllInfectionNumbersRepository.request()
             let latest = Array(infectionNumbers.suffix(7))
-            self.dataSource = .init(dataEntryConvertibles: latest)
+            self.state = .finished(.init(dataEntryConvertibles: latest))
         } catch {
-            self.error = error
+            self.state = .failed(error)
         }
     }
 
@@ -75,11 +77,11 @@ final class InfectionChartViewModel: ObservableObject {
                 
                 guard let self = self else { return }
 
-                self.dataSource = .init(dataEntryConvertibles: dataEntryConvertibles)
+                self.state = .finished(.init(dataEntryConvertibles: dataEntryConvertibles))
             }
 
         } catch {
-            self.error = error
+            self.state = .failed(error)
         }
     }
 
