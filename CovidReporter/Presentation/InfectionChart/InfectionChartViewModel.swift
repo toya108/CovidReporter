@@ -26,7 +26,7 @@ final class InfectionChartViewModel: ObservableObject {
         : await fetchInfectionNumbers(per: prefecture)
     }
 
-    private func fetchAllInfectionNumbers() async {
+    @MainActor private func fetchAllInfectionNumbers() async {
 
         do {
             let infectionNumbers = try await getAllInfectionNumbersRepository.request()
@@ -37,7 +37,7 @@ final class InfectionChartViewModel: ObservableObject {
         }
     }
 
-    private func fetchInfectionNumbers(per prefecture: Prefecture) async {
+    @MainActor private func fetchInfectionNumbers(per prefecture: Prefecture) async {
 
         let days = DateGenerator.generatePastDays(from: Date(), difference: 1, to: 8).map {
             DateConverter.convert(from: $0).filter { $0 != "/" }
@@ -73,16 +73,10 @@ final class InfectionChartViewModel: ObservableObject {
                 eigth, seventh, sixth, fifth, fourth, third, second, first
             ]
             let dataEntryConvertibles = AdpatientsCalculator.addAdpatients(from: infectionNumbers)
-            DispatchQueue.main.async { [weak self] in
-                
-                guard let self = self else { return }
-
-                self.state = .finished(.init(dataEntryConvertibles: dataEntryConvertibles))
-            }
+            self.state = .finished(.init(dataEntryConvertibles: dataEntryConvertibles))
 
         } catch {
             self.state = .failed(error)
         }
     }
-
 }
