@@ -1,9 +1,6 @@
 import Foundation
 
-protocol RequestProtocol {
-    associatedtype Response: Decodable
-    associatedtype Parameters: Encodable
-
+protocol APIRequestProtocol: RequestProtocol {
     var headers: [String: String] { get }
     var method: HTTPMethod { get }
     var parameters: Parameters { get }
@@ -19,7 +16,7 @@ protocol RequestProtocol {
     init(parameters: Parameters)
 }
 
-extension RequestProtocol {
+extension APIRequestProtocol {
 
     var baseURL: String {
         "https://opendata.corona.go.jp/api/Covid19JapanAll"
@@ -57,6 +54,8 @@ extension RequestProtocol {
             $0[$1.rawValue] = $1.value
         }
     }
+
+    var localDataInterceptor: (Parameters) -> Response? {{ _ in nil }}
 }
 
 private extension Encodable {

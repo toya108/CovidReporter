@@ -1,0 +1,2822 @@
+[
+    {
+        "date": "2020-04-21",
+        "npatients": 11350,
+        "adpatients": 370
+    },
+    {
+        "date": "2020-04-22",
+        "npatients": 11772,
+        "adpatients": 420
+    },
+    {
+        "date": "2020-04-23",
+        "npatients": 12240,
+        "adpatients": 434
+    },
+    {
+        "date": "2020-04-24",
+        "npatients": 12681,
+        "adpatients": 423
+    },
+    {
+        "date": "2020-04-25",
+        "npatients": 13031,
+        "adpatients": 346
+    },
+    {
+        "date": "2020-04-26",
+        "npatients": 13232,
+        "adpatients": 199
+    },
+    {
+        "date": "2020-04-27",
+        "npatients": 13422,
+        "adpatients": 183
+    },
+    {
+        "date": "2020-04-28",
+        "npatients": 13695,
+        "adpatients": 272
+    },
+    {
+        "date": "2020-04-29",
+        "npatients": 13929,
+        "adpatients": 214
+    },
+    {
+        "date": "2020-04-30",
+        "npatients": 14120,
+        "adpatients": 187
+    },
+    {
+        "date": "2020-05-01",
+        "npatients": 14383,
+        "adpatients": 261
+    },
+    {
+        "date": "2020-05-02",
+        "npatients": 14677,
+        "adpatients": 289
+    },
+    {
+        "date": "2020-05-03",
+        "npatients": 14895,
+        "adpatients": 200
+    },
+    {
+        "date": "2020-05-04",
+        "npatients": 15069,
+        "adpatients": 173
+    },
+    {
+        "date": "2020-05-05",
+        "npatients": 15192,
+        "adpatients": 122
+    },
+    {
+        "date": "2020-05-06",
+        "npatients": 15300,
+        "adpatients": 108
+    },
+    {
+        "date": "2020-05-07",
+        "npatients": 15382,
+        "adpatients": 93
+    },
+    {
+        "date": "2020-05-08",
+        "npatients": 15462,
+        "adpatients": 80
+    },
+    {
+        "date": "2020-05-09",
+        "npatients": 15581,
+        "adpatients": 119
+    },
+    {
+        "date": "2020-05-10",
+        "npatients": 15630,
+        "adpatients": 68
+    },
+    {
+        "date": "2020-05-11",
+        "npatients": 15706,
+        "adpatients": 50
+    },
+    {
+        "date": "2020-05-12",
+        "npatients": 15854,
+        "adpatients": 78
+    },
+    {
+        "date": "2020-05-13",
+        "npatients": 15908,
+        "adpatients": 56
+    },
+    {
+        "date": "2020-05-14",
+        "npatients": 16022,
+        "adpatients": 99
+    },
+    {
+        "date": "2020-05-15",
+        "npatients": 16066,
+        "adpatients": 52
+    },
+    {
+        "date": "2020-05-16",
+        "npatients": 16112,
+        "adpatients": 57
+    },
+    {
+        "date": "2020-05-17",
+        "npatients": 16132,
+        "adpatients": 28
+    },
+    {
+        "date": "2020-05-18",
+        "npatients": 16192,
+        "adpatients": 30
+    },
+    {
+        "date": "2020-05-19",
+        "npatients": 16212,
+        "adpatients": 31
+    },
+    {
+        "date": "2020-05-20",
+        "npatients": 16251,
+        "adpatients": 37
+    },
+    {
+        "date": "2020-05-21",
+        "npatients": 16339,
+        "adpatients": 43
+    },
+    {
+        "date": "2020-05-22",
+        "npatients": 16362,
+        "adpatients": 30
+    },
+    {
+        "date": "2020-05-23",
+        "npatients": 16375,
+        "adpatients": 28
+    },
+    {
+        "date": "2020-05-24",
+        "npatients": 16404,
+        "adpatients": 40
+    },
+    {
+        "date": "2020-05-25",
+        "npatients": 16445,
+        "adpatients": 20
+    },
+    {
+        "date": "2020-05-26",
+        "npatients": 16469,
+        "adpatients": 28
+    },
+    {
+        "date": "2020-05-27",
+        "npatients": 16498,
+        "adpatients": 38
+    },
+    {
+        "date": "2020-05-28",
+        "npatients": 16532,
+        "adpatients": 61
+    },
+    {
+        "date": "2020-05-29",
+        "npatients": 16607,
+        "adpatients": 64
+    },
+    {
+        "date": "2020-05-30",
+        "npatients": 16650,
+        "adpatients": 46
+    },
+    {
+        "date": "2020-05-31",
+        "npatients": 16679,
+        "adpatients": 33
+    },
+    {
+        "date": "2020-06-01",
+        "npatients": 16724,
+        "adpatients": 36
+    },
+    {
+        "date": "2020-06-02",
+        "npatients": 16779,
+        "adpatients": 51
+    },
+    {
+        "date": "2020-06-03",
+        "npatients": 16807,
+        "adpatients": 26
+    },
+    {
+        "date": "2020-06-04",
+        "npatients": 16850,
+        "adpatients": 45
+    },
+    {
+        "date": "2020-06-05",
+        "npatients": 16886,
+        "adpatients": 41
+    },
+    {
+        "date": "2020-06-06",
+        "npatients": 16923,
+        "adpatients": 45
+    },
+    {
+        "date": "2020-06-07",
+        "npatients": 16950,
+        "adpatients": 32
+    },
+    {
+        "date": "2020-06-08",
+        "npatients": 16986,
+        "adpatients": 21
+    },
+    {
+        "date": "2020-06-09",
+        "npatients": 17012,
+        "adpatients": 30
+    },
+    {
+        "date": "2020-06-10",
+        "npatients": 17051,
+        "adpatients": 36
+    },
+    {
+        "date": "2020-06-11",
+        "npatients": 17090,
+        "adpatients": 40
+    },
+    {
+        "date": "2020-06-12",
+        "npatients": 17135,
+        "adpatients": 57
+    },
+    {
+        "date": "2020-06-13",
+        "npatients": 17179,
+        "adpatients": 43
+    },
+    {
+        "date": "2020-06-14",
+        "npatients": 17238,
+        "adpatients": 62
+    },
+    {
+        "date": "2020-06-15",
+        "npatients": 17311,
+        "adpatients": 60
+    },
+    {
+        "date": "2020-06-16",
+        "npatients": 17350,
+        "adpatients": 42
+    },
+    {
+        "date": "2020-06-17",
+        "npatients": 17387,
+        "adpatients": 43
+    },
+    {
+        "date": "2020-06-18",
+        "npatients": 17456,
+        "adpatients": 68
+    },
+    {
+        "date": "2020-06-19",
+        "npatients": 17512,
+        "adpatients": 54
+    },
+    {
+        "date": "2020-06-20",
+        "npatients": 17557,
+        "adpatients": 65
+    },
+    {
+        "date": "2020-06-21",
+        "npatients": 17622,
+        "adpatients": 49
+    },
+    {
+        "date": "2020-06-22",
+        "npatients": 17671,
+        "adpatients": 40
+    },
+    {
+        "date": "2020-06-23",
+        "npatients": 17723,
+        "adpatients": 53
+    },
+    {
+        "date": "2020-06-24",
+        "npatients": 17802,
+        "adpatients": 89
+    },
+    {
+        "date": "2020-06-25",
+        "npatients": 17886,
+        "adpatients": 79
+    },
+    {
+        "date": "2020-06-26",
+        "npatients": 17980,
+        "adpatients": 99
+    },
+    {
+        "date": "2020-06-27",
+        "npatients": 18069,
+        "adpatients": 88
+    },
+    {
+        "date": "2020-06-28",
+        "npatients": 18154,
+        "adpatients": 111
+    },
+    {
+        "date": "2020-06-29",
+        "npatients": 18270,
+        "adpatients": 110
+    },
+    {
+        "date": "2020-06-30",
+        "npatients": 18394,
+        "adpatients": 132
+    },
+    {
+        "date": "2020-07-01",
+        "npatients": 18545,
+        "adpatients": 125
+    },
+    {
+        "date": "2020-07-02",
+        "npatients": 18737,
+        "adpatients": 194
+    },
+    {
+        "date": "2020-07-03",
+        "npatients": 18950,
+        "adpatients": 249
+    },
+    {
+        "date": "2020-07-04",
+        "npatients": 19184,
+        "adpatients": 268
+    },
+    {
+        "date": "2020-07-05",
+        "npatients": 19425,
+        "adpatients": 195
+    },
+    {
+        "date": "2020-07-06",
+        "npatients": 19628,
+        "adpatients": 172
+    },
+    {
+        "date": "2020-07-07",
+        "npatients": 19816,
+        "adpatients": 208
+    },
+    {
+        "date": "2020-07-08",
+        "npatients": 20010,
+        "adpatients": 203
+    },
+    {
+        "date": "2020-07-09",
+        "npatients": 20353,
+        "adpatients": 352
+    },
+    {
+        "date": "2020-07-10",
+        "npatients": 20753,
+        "adpatients": 420
+    },
+    {
+        "date": "2020-07-11",
+        "npatients": 21113,
+        "adpatients": 373
+    },
+    {
+        "date": "2020-07-12",
+        "npatients": 21459,
+        "adpatients": 391
+    },
+    {
+        "date": "2020-07-13",
+        "npatients": 21798,
+        "adpatients": 248
+    },
+    {
+        "date": "2020-07-14",
+        "npatients": 22081,
+        "adpatients": 327
+    },
+    {
+        "date": "2020-07-15",
+        "npatients": 22450,
+        "adpatients": 440
+    },
+    {
+        "date": "2020-07-16",
+        "npatients": 23029,
+        "adpatients": 619
+    },
+    {
+        "date": "2020-07-17",
+        "npatients": 23680,
+        "adpatients": 588
+    },
+    {
+        "date": "2020-07-18",
+        "npatients": 24181,
+        "adpatients": 655
+    },
+    {
+        "date": "2020-07-19",
+        "npatients": 24626,
+        "adpatients": 501
+    },
+    {
+        "date": "2020-07-20",
+        "npatients": 25255,
+        "adpatients": 407
+    },
+    {
+        "date": "2020-07-21",
+        "npatients": 25807,
+        "adpatients": 618
+    },
+    {
+        "date": "2020-07-22",
+        "npatients": 26529,
+        "adpatients": 792
+    },
+    {
+        "date": "2020-07-23",
+        "npatients": 27441,
+        "adpatients": 966
+    },
+    {
+        "date": "2020-07-24",
+        "npatients": 28266,
+        "adpatients": 766
+    },
+    {
+        "date": "2020-07-25",
+        "npatients": 28851,
+        "adpatients": 798
+    },
+    {
+        "date": "2020-07-26",
+        "npatients": 29452,
+        "adpatients": 830
+    },
+    {
+        "date": "2020-07-27",
+        "npatients": 30406,
+        "adpatients": 581
+    },
+    {
+        "date": "2020-07-28",
+        "npatients": 31333,
+        "adpatients": 968
+    },
+    {
+        "date": "2020-07-29",
+        "npatients": 32459,
+        "adpatients": 1242
+    },
+    {
+        "date": "2020-07-30",
+        "npatients": 33774,
+        "adpatients": 1297
+    },
+    {
+        "date": "2020-07-31",
+        "npatients": 35233,
+        "adpatients": 1574
+    },
+    {
+        "date": "2020-08-01",
+        "npatients": 36081,
+        "adpatients": 1535
+    },
+    {
+        "date": "2020-08-02",
+        "npatients": 38072,
+        "adpatients": 1324
+    },
+    {
+        "date": "2020-08-03",
+        "npatients": 39220,
+        "adpatients": 937
+    },
+    {
+        "date": "2020-08-04",
+        "npatients": 40485,
+        "adpatients": 1234
+    },
+    {
+        "date": "2020-08-05",
+        "npatients": 41611,
+        "adpatients": 1350
+    },
+    {
+        "date": "2020-08-06",
+        "npatients": 43152,
+        "adpatients": 1479
+    },
+    {
+        "date": "2020-08-07",
+        "npatients": 44770,
+        "adpatients": 1595
+    },
+    {
+        "date": "2020-08-08",
+        "npatients": 46105,
+        "adpatients": 1523
+    },
+    {
+        "date": "2020-08-09",
+        "npatients": 47306,
+        "adpatients": 1486
+    },
+    {
+        "date": "2020-08-10",
+        "npatients": 48238,
+        "adpatients": 836
+    },
+    {
+        "date": "2020-08-11",
+        "npatients": 49512,
+        "adpatients": 693
+    },
+    {
+        "date": "2020-08-12",
+        "npatients": 50444,
+        "adpatients": 969
+    },
+    {
+        "date": "2020-08-13",
+        "npatients": 51513,
+        "adpatients": 1176
+    },
+    {
+        "date": "2020-08-14",
+        "npatients": 52869,
+        "adpatients": 1356
+    },
+    {
+        "date": "2020-08-15",
+        "npatients": 54002,
+        "adpatients": 1234
+    },
+    {
+        "date": "2020-08-16",
+        "npatients": 54952,
+        "adpatients": 1017
+    },
+    {
+        "date": "2020-08-17",
+        "npatients": 55958,
+        "adpatients": 630
+    },
+    {
+        "date": "2020-08-18",
+        "npatients": 56820,
+        "adpatients": 904
+    },
+    {
+        "date": "2020-08-19",
+        "npatients": 57766,
+        "adpatients": 1080
+    },
+    {
+        "date": "2020-08-20",
+        "npatients": 58978,
+        "adpatients": 1182
+    },
+    {
+        "date": "2020-08-21",
+        "npatients": 59988,
+        "adpatients": 1036
+    },
+    {
+        "date": "2020-08-22",
+        "npatients": 61001,
+        "adpatients": 985
+    },
+    {
+        "date": "2020-08-23",
+        "npatients": 61754,
+        "adpatients": 739
+    },
+    {
+        "date": "2020-08-24",
+        "npatients": 62364,
+        "adpatients": 491
+    },
+    {
+        "date": "2020-08-25",
+        "npatients": 63060,
+        "adpatients": 712
+    },
+    {
+        "date": "2020-08-26",
+        "npatients": 63901,
+        "adpatients": 893
+    },
+    {
+        "date": "2020-08-27",
+        "npatients": 64801,
+        "adpatients": 867
+    },
+    {
+        "date": "2020-08-28",
+        "npatients": 65645,
+        "adpatients": 870
+    },
+    {
+        "date": "2020-08-29",
+        "npatients": 66481,
+        "adpatients": 844
+    },
+    {
+        "date": "2020-08-30",
+        "npatients": 67077,
+        "adpatients": 598
+    },
+    {
+        "date": "2020-08-31",
+        "npatients": 67595,
+        "adpatients": 425
+    },
+    {
+        "date": "2020-09-01",
+        "npatients": 68196,
+        "adpatients": 624
+    },
+    {
+        "date": "2020-09-02",
+        "npatients": 68785,
+        "adpatients": 589
+    },
+    {
+        "date": "2020-09-03",
+        "npatients": 69450,
+        "adpatients": 656
+    },
+    {
+        "date": "2020-09-04",
+        "npatients": 70051,
+        "adpatients": 583
+    },
+    {
+        "date": "2020-09-05",
+        "npatients": 70592,
+        "adpatients": 598
+    },
+    {
+        "date": "2020-09-06",
+        "npatients": 71025,
+        "adpatients": 447
+    },
+    {
+        "date": "2020-09-07",
+        "npatients": 71398,
+        "adpatients": 288
+    },
+    {
+        "date": "2020-09-08",
+        "npatients": 71889,
+        "adpatients": 514
+    },
+    {
+        "date": "2020-09-09",
+        "npatients": 72381,
+        "adpatients": 507
+    },
+    {
+        "date": "2020-09-10",
+        "npatients": 73058,
+        "adpatients": 709
+    },
+    {
+        "date": "2020-09-11",
+        "npatients": 73694,
+        "adpatients": 639
+    },
+    {
+        "date": "2020-09-12",
+        "npatients": 74360,
+        "adpatients": 641
+    },
+    {
+        "date": "2020-09-13",
+        "npatients": 74797,
+        "adpatients": 439
+    },
+    {
+        "date": "2020-09-14",
+        "npatients": 75093,
+        "adpatients": 265
+    },
+    {
+        "date": "2020-09-15",
+        "npatients": 75582,
+        "adpatients": 531
+    },
+    {
+        "date": "2020-09-16",
+        "npatients": 76135,
+        "adpatients": 543
+    },
+    {
+        "date": "2020-09-17",
+        "npatients": 76610,
+        "adpatients": 480
+    },
+    {
+        "date": "2020-09-18",
+        "npatients": 77183,
+        "adpatients": 569
+    },
+    {
+        "date": "2020-09-19",
+        "npatients": 77762,
+        "adpatients": 597
+    },
+    {
+        "date": "2020-09-20",
+        "npatients": 78234,
+        "adpatients": 469
+    },
+    {
+        "date": "2020-09-21",
+        "npatients": 78525,
+        "adpatients": 307
+    },
+    {
+        "date": "2020-09-22",
+        "npatients": 78847,
+        "adpatients": 322
+    },
+    {
+        "date": "2020-09-23",
+        "npatients": 79116,
+        "adpatients": 216
+    },
+    {
+        "date": "2020-09-24",
+        "npatients": 79565,
+        "adpatients": 477
+    },
+    {
+        "date": "2020-09-25",
+        "npatients": 80118,
+        "adpatients": 570
+    },
+    {
+        "date": "2020-09-26",
+        "npatients": 80747,
+        "adpatients": 638
+    },
+    {
+        "date": "2020-09-27",
+        "npatients": 81181,
+        "adpatients": 478
+    },
+    {
+        "date": "2020-09-28",
+        "npatients": 81537,
+        "adpatients": 294
+    },
+    {
+        "date": "2020-09-29",
+        "npatients": 82053,
+        "adpatients": 531
+    },
+    {
+        "date": "2020-09-30",
+        "npatients": 82597,
+        "adpatients": 570
+    },
+    {
+        "date": "2020-10-01",
+        "npatients": 83236,
+        "adpatients": 623
+    },
+    {
+        "date": "2020-10-02",
+        "npatients": 83783,
+        "adpatients": 537
+    },
+    {
+        "date": "2020-10-03",
+        "npatients": 84340,
+        "adpatients": 564
+    },
+    {
+        "date": "2020-10-04",
+        "npatients": 84733,
+        "adpatients": 395
+    },
+    {
+        "date": "2020-10-05",
+        "npatients": 85030,
+        "adpatients": 271
+    },
+    {
+        "date": "2020-10-06",
+        "npatients": 85521,
+        "adpatients": 497
+    },
+    {
+        "date": "2020-10-07",
+        "npatients": 85992,
+        "adpatients": 505
+    },
+    {
+        "date": "2020-10-08",
+        "npatients": 86606,
+        "adpatients": 622
+    },
+    {
+        "date": "2020-10-09",
+        "npatients": 87191,
+        "adpatients": 594
+    },
+    {
+        "date": "2020-10-10",
+        "npatients": 87858,
+        "adpatients": 669
+    },
+    {
+        "date": "2020-10-11",
+        "npatients": 88288,
+        "adpatients": 432
+    },
+    {
+        "date": "2020-10-12",
+        "npatients": 88609,
+        "adpatients": 273
+    },
+    {
+        "date": "2020-10-13",
+        "npatients": 89070,
+        "adpatients": 494
+    },
+    {
+        "date": "2020-10-14",
+        "npatients": 89637,
+        "adpatients": 549
+    },
+    {
+        "date": "2020-10-15",
+        "npatients": 90354,
+        "adpatients": 703
+    },
+    {
+        "date": "2020-10-16",
+        "npatients": 90979,
+        "adpatients": 635
+    },
+    {
+        "date": "2020-10-17",
+        "npatients": 91560,
+        "adpatients": 579
+    },
+    {
+        "date": "2020-10-18",
+        "npatients": 92023,
+        "adpatients": 457
+    },
+    {
+        "date": "2020-10-19",
+        "npatients": 92373,
+        "adpatients": 315
+    },
+    {
+        "date": "2020-10-20",
+        "npatients": 92819,
+        "adpatients": 477
+    },
+    {
+        "date": "2020-10-21",
+        "npatients": 93405,
+        "adpatients": 616
+    },
+    {
+        "date": "2020-10-22",
+        "npatients": 94014,
+        "adpatients": 610
+    },
+    {
+        "date": "2020-10-23",
+        "npatients": 94706,
+        "adpatients": 745
+    },
+    {
+        "date": "2020-10-24",
+        "npatients": 95392,
+        "adpatients": 718
+    },
+    {
+        "date": "2020-10-25",
+        "npatients": 95924,
+        "adpatients": 488
+    },
+    {
+        "date": "2020-10-26",
+        "npatients": 96340,
+        "adpatients": 401
+    },
+    {
+        "date": "2020-10-27",
+        "npatients": 96958,
+        "adpatients": 649
+    },
+    {
+        "date": "2020-10-28",
+        "npatients": 97687,
+        "adpatients": 724
+    },
+    {
+        "date": "2020-10-29",
+        "npatients": 98453,
+        "adpatients": 804
+    },
+    {
+        "date": "2020-10-30",
+        "npatients": 99214,
+        "adpatients": 769
+    },
+    {
+        "date": "2020-10-31",
+        "npatients": 99959,
+        "adpatients": 868
+    },
+    {
+        "date": "2020-11-01",
+        "npatients": 100618,
+        "adpatients": 606
+    },
+    {
+        "date": "2020-11-02",
+        "npatients": 101078,
+        "adpatients": 482
+    },
+    {
+        "date": "2020-11-03",
+        "npatients": 101693,
+        "adpatients": 868
+    },
+    {
+        "date": "2020-11-04",
+        "npatients": 102619,
+        "adpatients": 607
+    },
+    {
+        "date": "2020-11-05",
+        "npatients": 103558,
+        "adpatients": 1049
+    },
+    {
+        "date": "2020-11-06",
+        "npatients": 104682,
+        "adpatients": 1137
+    },
+    {
+        "date": "2020-11-07",
+        "npatients": 105827,
+        "adpatients": 1302
+    },
+    {
+        "date": "2020-11-08",
+        "npatients": 106806,
+        "adpatients": 938
+    },
+    {
+        "date": "2020-11-09",
+        "npatients": 107696,
+        "adpatients": 772
+    },
+    {
+        "date": "2020-11-10",
+        "npatients": 108865,
+        "adpatients": 1278
+    },
+    {
+        "date": "2020-11-11",
+        "npatients": 110409,
+        "adpatients": 1535
+    },
+    {
+        "date": "2020-11-12",
+        "npatients": 111970,
+        "adpatients": 1623
+    },
+    {
+        "date": "2020-11-13",
+        "npatients": 113649,
+        "adpatients": 1704
+    },
+    {
+        "date": "2020-11-14",
+        "npatients": 115327,
+        "adpatients": 1722
+    },
+    {
+        "date": "2020-11-15",
+        "npatients": 116774,
+        "adpatients": 1423
+    },
+    {
+        "date": "2020-11-16",
+        "npatients": 117960,
+        "adpatients": 948
+    },
+    {
+        "date": "2020-11-17",
+        "npatients": 119441,
+        "adpatients": 1686
+    },
+    {
+        "date": "2020-11-18",
+        "npatients": 121580,
+        "adpatients": 2179
+    },
+    {
+        "date": "2020-11-19",
+        "npatients": 123867,
+        "adpatients": 2383
+    },
+    {
+        "date": "2020-11-20",
+        "npatients": 126256,
+        "adpatients": 2418
+    },
+    {
+        "date": "2020-11-21",
+        "npatients": 128750,
+        "adpatients": 2508
+    },
+    {
+        "date": "2020-11-22",
+        "npatients": 130917,
+        "adpatients": 2150
+    },
+    {
+        "date": "2020-11-23",
+        "npatients": 132479,
+        "adpatients": 1513
+    },
+    {
+        "date": "2020-11-24",
+        "npatients": 133939,
+        "adpatients": 1217
+    },
+    {
+        "date": "2020-11-25",
+        "npatients": 135787,
+        "adpatients": 1930
+    },
+    {
+        "date": "2020-11-26",
+        "npatients": 138011,
+        "adpatients": 2499
+    },
+    {
+        "date": "2020-11-27",
+        "npatients": 140568,
+        "adpatients": 2510
+    },
+    {
+        "date": "2020-11-28",
+        "npatients": 143139,
+        "adpatients": 2674
+    },
+    {
+        "date": "2020-11-29",
+        "npatients": 145231,
+        "adpatients": 2041
+    },
+    {
+        "date": "2020-11-30",
+        "npatients": 147155,
+        "adpatients": 1429
+    },
+    {
+        "date": "2020-12-01",
+        "npatients": 148837,
+        "adpatients": 2019
+    },
+    {
+        "date": "2020-12-02",
+        "npatients": 151263,
+        "adpatients": 2419
+    },
+    {
+        "date": "2020-12-03",
+        "npatients": 153658,
+        "adpatients": 2507
+    },
+    {
+        "date": "2020-12-04",
+        "npatients": 156093,
+        "adpatients": 2425
+    },
+    {
+        "date": "2020-12-05",
+        "npatients": 158500,
+        "adpatients": 2497
+    },
+    {
+        "date": "2020-12-06",
+        "npatients": 160452,
+        "adpatients": 1999
+    },
+    {
+        "date": "2020-12-07",
+        "npatients": 162298,
+        "adpatients": 1502
+    },
+    {
+        "date": "2020-12-08",
+        "npatients": 164203,
+        "adpatients": 2148
+    },
+    {
+        "date": "2020-12-09",
+        "npatients": 166928,
+        "adpatients": 2802
+    },
+    {
+        "date": "2020-12-10",
+        "npatients": 169890,
+        "adpatients": 2948
+    },
+    {
+        "date": "2020-12-11",
+        "npatients": 172638,
+        "adpatients": 2781
+    },
+    {
+        "date": "2020-12-12",
+        "npatients": 175608,
+        "adpatients": 3012
+    },
+    {
+        "date": "2020-12-13",
+        "npatients": 177960,
+        "adpatients": 2373
+    },
+    {
+        "date": "2020-12-14",
+        "npatients": 180162,
+        "adpatients": 1662
+    },
+    {
+        "date": "2020-12-15",
+        "npatients": 182326,
+        "adpatients": 2402
+    },
+    {
+        "date": "2020-12-16",
+        "npatients": 185386,
+        "adpatients": 2987
+    },
+    {
+        "date": "2020-12-17",
+        "npatients": 188415,
+        "adpatients": 3208
+    },
+    {
+        "date": "2020-12-18",
+        "npatients": 191303,
+        "adpatients": 2833
+    },
+    {
+        "date": "2020-12-19",
+        "npatients": 194139,
+        "adpatients": 2972
+    },
+    {
+        "date": "2020-12-20",
+        "npatients": 196757,
+        "adpatients": 2391
+    },
+    {
+        "date": "2020-12-21",
+        "npatients": 198864,
+        "adpatients": 1776
+    },
+    {
+        "date": "2020-12-22",
+        "npatients": 201301,
+        "adpatients": 2665
+    },
+    {
+        "date": "2020-12-23",
+        "npatients": 204317,
+        "adpatients": 3258
+    },
+    {
+        "date": "2020-12-24",
+        "npatients": 208148,
+        "adpatients": 3714
+    },
+    {
+        "date": "2020-12-25",
+        "npatients": 211705,
+        "adpatients": 3813
+    },
+    {
+        "date": "2020-12-26",
+        "npatients": 215461,
+        "adpatients": 3694
+    },
+    {
+        "date": "2020-12-27",
+        "npatients": 218374,
+        "adpatients": 2939
+    },
+    {
+        "date": "2020-12-28",
+        "npatients": 221246,
+        "adpatients": 2383
+    },
+    {
+        "date": "2020-12-29",
+        "npatients": 224716,
+        "adpatients": 3595
+    },
+    {
+        "date": "2020-12-30",
+        "npatients": 228418,
+        "adpatients": 3845
+    },
+    {
+        "date": "2020-12-31",
+        "npatients": 232495,
+        "adpatients": 4322
+    },
+    {
+        "date": "2021-01-01",
+        "npatients": 236104,
+        "adpatients": 3106
+    },
+    {
+        "date": "2021-01-02",
+        "npatients": 239032,
+        "adpatients": 3045
+    },
+    {
+        "date": "2021-01-03",
+        "npatients": 241902,
+        "adpatients": 3127
+    },
+    {
+        "date": "2021-01-04",
+        "npatients": 245997,
+        "adpatients": 3302
+    },
+    {
+        "date": "2021-01-05",
+        "npatients": 250343,
+        "adpatients": 4885
+    },
+    {
+        "date": "2021-01-06",
+        "npatients": 256412,
+        "adpatients": 5946
+    },
+    {
+        "date": "2021-01-07",
+        "npatients": 263307,
+        "adpatients": 7537
+    },
+    {
+        "date": "2021-01-08",
+        "npatients": 271155,
+        "adpatients": 7844
+    },
+    {
+        "date": "2021-01-09",
+        "npatients": 278762,
+        "adpatients": 7278
+    },
+    {
+        "date": "2021-01-10",
+        "npatients": 284728,
+        "adpatients": 6090
+    },
+    {
+        "date": "2021-01-11",
+        "npatients": 290175,
+        "adpatients": 4851
+    },
+    {
+        "date": "2021-01-12",
+        "npatients": 295272,
+        "adpatients": 4521
+    },
+    {
+        "date": "2021-01-13",
+        "npatients": 300573,
+        "adpatients": 5841
+    },
+    {
+        "date": "2021-01-14",
+        "npatients": 307159,
+        "adpatients": 6598
+    },
+    {
+        "date": "2021-01-15",
+        "npatients": 313844,
+        "adpatients": 6741
+    },
+    {
+        "date": "2021-01-16",
+        "npatients": 320218,
+        "adpatients": 6987
+    },
+    {
+        "date": "2021-01-17",
+        "npatients": 326208,
+        "adpatients": 5751
+    },
+    {
+        "date": "2021-01-18",
+        "npatients": 332231,
+        "adpatients": 4917
+    },
+    {
+        "date": "2021-01-19",
+        "npatients": 337660,
+        "adpatients": 5300
+    },
+    {
+        "date": "2021-01-20",
+        "npatients": 343106,
+        "adpatients": 5532
+    },
+    {
+        "date": "2021-01-21",
+        "npatients": 348897,
+        "adpatients": 5662
+    },
+    {
+        "date": "2021-01-22",
+        "npatients": 353945,
+        "adpatients": 4803
+    },
+    {
+        "date": "2021-01-23",
+        "npatients": 358527,
+        "adpatients": 4696
+    },
+    {
+        "date": "2021-01-24",
+        "npatients": 362676,
+        "adpatients": 3987
+    },
+    {
+        "date": "2021-01-25",
+        "npatients": 366002,
+        "adpatients": 2761
+    },
+    {
+        "date": "2021-01-26",
+        "npatients": 369537,
+        "adpatients": 3849
+    },
+    {
+        "date": "2021-01-27",
+        "npatients": 373460,
+        "adpatients": 3965
+    },
+    {
+        "date": "2021-01-28",
+        "npatients": 377364,
+        "adpatients": 4123
+    },
+    {
+        "date": "2021-01-29",
+        "npatients": 380927,
+        "adpatients": 3536
+    },
+    {
+        "date": "2021-01-30",
+        "npatients": 384582,
+        "adpatients": 3332
+    },
+    {
+        "date": "2021-01-31",
+        "npatients": 387358,
+        "adpatients": 2672
+    },
+    {
+        "date": "2021-02-01",
+        "npatients": 389457,
+        "adpatients": 1783
+    },
+    {
+        "date": "2021-02-02",
+        "npatients": 391665,
+        "adpatients": 2329
+    },
+    {
+        "date": "2021-02-03",
+        "npatients": 394256,
+        "adpatients": 2639
+    },
+    {
+        "date": "2021-02-04",
+        "npatients": 396872,
+        "adpatients": 2573
+    },
+    {
+        "date": "2021-02-05",
+        "npatients": 399178,
+        "adpatients": 2371
+    },
+    {
+        "date": "2021-02-06",
+        "npatients": 401256,
+        "adpatients": 2274
+    },
+    {
+        "date": "2021-02-07",
+        "npatients": 402809,
+        "adpatients": 1628
+    },
+    {
+        "date": "2021-02-08",
+        "npatients": 404584,
+        "adpatients": 1215
+    },
+    {
+        "date": "2021-02-09",
+        "npatients": 406003,
+        "adpatients": 1569
+    },
+    {
+        "date": "2021-02-10",
+        "npatients": 407827,
+        "adpatients": 1885
+    },
+    {
+        "date": "2021-02-11",
+        "npatients": 409564,
+        "adpatients": 1691
+    },
+    {
+        "date": "2021-02-12",
+        "npatients": 410963,
+        "adpatients": 1297
+    },
+    {
+        "date": "2021-02-13",
+        "npatients": 412275,
+        "adpatients": 1356
+    },
+    {
+        "date": "2021-02-14",
+        "npatients": 413583,
+        "adpatients": 1362
+    },
+    {
+        "date": "2021-02-15",
+        "npatients": 415565,
+        "adpatients": 962
+    },
+    {
+        "date": "2021-02-16",
+        "npatients": 416814,
+        "adpatients": 1304
+    },
+    {
+        "date": "2021-02-17",
+        "npatients": 418203,
+        "adpatients": 1444
+    },
+    {
+        "date": "2021-02-18",
+        "npatients": 419762,
+        "adpatients": 1541
+    },
+    {
+        "date": "2021-02-19",
+        "npatients": 421102,
+        "adpatients": 1281
+    },
+    {
+        "date": "2021-02-20",
+        "npatients": 422293,
+        "adpatients": 1229
+    },
+    {
+        "date": "2021-02-21",
+        "npatients": 423382,
+        "adpatients": 1032
+    },
+    {
+        "date": "2021-02-22",
+        "npatients": 424239,
+        "adpatients": 739
+    },
+    {
+        "date": "2021-02-23",
+        "npatients": 425248,
+        "adpatients": 1083
+    },
+    {
+        "date": "2021-02-24",
+        "npatients": 426333,
+        "adpatients": 926
+    },
+    {
+        "date": "2021-02-25",
+        "npatients": 427251,
+        "adpatients": 1075
+    },
+    {
+        "date": "2021-02-26",
+        "npatients": 428310,
+        "adpatients": 1059
+    },
+    {
+        "date": "2021-02-27",
+        "npatients": 429505,
+        "adpatients": 1208
+    },
+    {
+        "date": "2021-02-28",
+        "npatients": 430533,
+        "adpatients": 994
+    },
+    {
+        "date": "2021-03-01",
+        "npatients": 431250,
+        "adpatients": 685
+    },
+    {
+        "date": "2021-03-02",
+        "npatients": 432101,
+        "adpatients": 887
+    },
+    {
+        "date": "2021-03-03",
+        "npatients": 433290,
+        "adpatients": 1241
+    },
+    {
+        "date": "2021-03-04",
+        "npatients": 434468,
+        "adpatients": 1168
+    },
+    {
+        "date": "2021-03-05",
+        "npatients": 435630,
+        "adpatients": 1146
+    },
+    {
+        "date": "2021-03-06",
+        "npatients": 436687,
+        "adpatients": 1048
+    },
+    {
+        "date": "2021-03-07",
+        "npatients": 437720,
+        "adpatients": 1062
+    },
+    {
+        "date": "2021-03-08",
+        "npatients": 438398,
+        "adpatients": 599
+    },
+    {
+        "date": "2021-03-09",
+        "npatients": 439454,
+        "adpatients": 1126
+    },
+    {
+        "date": "2021-03-10",
+        "npatients": 440722,
+        "adpatients": 1312
+    },
+    {
+        "date": "2021-03-11",
+        "npatients": 442007,
+        "adpatients": 1316
+    },
+    {
+        "date": "2021-03-12",
+        "npatients": 443298,
+        "adpatients": 1268
+    },
+    {
+        "date": "2021-03-13",
+        "npatients": 444582,
+        "adpatients": 1316
+    },
+    {
+        "date": "2021-03-14",
+        "npatients": 445610,
+        "adpatients": 984
+    },
+    {
+        "date": "2021-03-15",
+        "npatients": 446386,
+        "adpatients": 688
+    },
+    {
+        "date": "2021-03-16",
+        "npatients": 447409,
+        "adpatients": 1130
+    },
+    {
+        "date": "2021-03-17",
+        "npatients": 448868,
+        "adpatients": 1522
+    },
+    {
+        "date": "2021-03-18",
+        "npatients": 450377,
+        "adpatients": 1492
+    },
+    {
+        "date": "2021-03-19",
+        "npatients": 451830,
+        "adpatients": 1453
+    },
+    {
+        "date": "2021-03-20",
+        "npatients": 453304,
+        "adpatients": 1516
+    },
+    {
+        "date": "2021-03-21",
+        "npatients": 454438,
+        "adpatients": 1110
+    },
+    {
+        "date": "2021-03-22",
+        "npatients": 455406,
+        "adpatients": 812
+    },
+    {
+        "date": "2021-03-23",
+        "npatients": 456691,
+        "adpatients": 1487
+    },
+    {
+        "date": "2021-03-24",
+        "npatients": 458539,
+        "adpatients": 1924
+    },
+    {
+        "date": "2021-03-25",
+        "npatients": 460478,
+        "adpatients": 1910
+    },
+    {
+        "date": "2021-03-26",
+        "npatients": 462499,
+        "adpatients": 2013
+    },
+    {
+        "date": "2021-03-27",
+        "npatients": 464470,
+        "adpatients": 2025
+    },
+    {
+        "date": "2021-03-28",
+        "npatients": 466230,
+        "adpatients": 1753
+    },
+    {
+        "date": "2021-03-29",
+        "npatients": 467786,
+        "adpatients": 1300
+    },
+    {
+        "date": "2021-03-30",
+        "npatients": 469713,
+        "adpatients": 2077
+    },
+    {
+        "date": "2021-03-31",
+        "npatients": 472366,
+        "adpatients": 2831
+    },
+    {
+        "date": "2021-04-01",
+        "npatients": 475044,
+        "adpatients": 2595
+    },
+    {
+        "date": "2021-04-02",
+        "npatients": 477737,
+        "adpatients": 2741
+    },
+    {
+        "date": "2021-04-03",
+        "npatients": 480424,
+        "adpatients": 2753
+    },
+    {
+        "date": "2021-04-04",
+        "npatients": 482871,
+        "adpatients": 2451
+    },
+    {
+        "date": "2021-04-05",
+        "npatients": 485085,
+        "adpatients": 1554
+    },
+    {
+        "date": "2021-04-06",
+        "npatients": 487108,
+        "adpatients": 2635
+    },
+    {
+        "date": "2021-04-07",
+        "npatients": 490400,
+        "adpatients": 3456
+    },
+    {
+        "date": "2021-04-08",
+        "npatients": 493728,
+        "adpatients": 3405
+    },
+    {
+        "date": "2021-04-09",
+        "npatients": 497305,
+        "adpatients": 3467
+    },
+    {
+        "date": "2021-04-10",
+        "npatients": 500895,
+        "adpatients": 3630
+    },
+    {
+        "date": "2021-04-11",
+        "npatients": 503774,
+        "adpatients": 2758
+    },
+    {
+        "date": "2021-04-12",
+        "npatients": 506272,
+        "adpatients": 2094
+    },
+    {
+        "date": "2021-04-13",
+        "npatients": 509627,
+        "adpatients": 3444
+    },
+    {
+        "date": "2021-04-14",
+        "npatients": 513569,
+        "adpatients": 4302
+    },
+    {
+        "date": "2021-04-15",
+        "npatients": 518187,
+        "adpatients": 4570
+    },
+    {
+        "date": "2021-04-16",
+        "npatients": 522647,
+        "adpatients": 4519
+    },
+    {
+        "date": "2021-04-17",
+        "npatients": 527247,
+        "adpatients": 4722
+    },
+    {
+        "date": "2021-04-18",
+        "npatients": 531466,
+        "adpatients": 4032
+    },
+    {
+        "date": "2021-04-19",
+        "npatients": 534716,
+        "adpatients": 2893
+    },
+    {
+        "date": "2021-04-20",
+        "npatients": 538881,
+        "adpatients": 4328
+    },
+    {
+        "date": "2021-04-21",
+        "npatients": 543799,
+        "adpatients": 5280
+    },
+    {
+        "date": "2021-04-22",
+        "npatients": 549259,
+        "adpatients": 5452
+    },
+    {
+        "date": "2021-04-23",
+        "npatients": 554356,
+        "adpatients": 5094
+    },
+    {
+        "date": "2021-04-24",
+        "npatients": 559492,
+        "adpatients": 5433
+    },
+    {
+        "date": "2021-04-25",
+        "npatients": 564211,
+        "adpatients": 4434
+    },
+    {
+        "date": "2021-04-26",
+        "npatients": 568372,
+        "adpatients": 3303
+    },
+    {
+        "date": "2021-04-27",
+        "npatients": 572888,
+        "adpatients": 4958
+    },
+    {
+        "date": "2021-04-28",
+        "npatients": 578306,
+        "adpatients": 5788
+    },
+    {
+        "date": "2021-04-29",
+        "npatients": 584086,
+        "adpatients": 5727
+    },
+    {
+        "date": "2021-04-30",
+        "npatients": 588900,
+        "adpatients": 4658
+    },
+    {
+        "date": "2021-05-01",
+        "npatients": 594500,
+        "adpatients": 5813
+    },
+    {
+        "date": "2021-05-02",
+        "npatients": 600119,
+        "adpatients": 5589
+    },
+    {
+        "date": "2021-05-03",
+        "npatients": 604872,
+        "adpatients": 4458
+    },
+    {
+        "date": "2021-05-04",
+        "npatients": 609603,
+        "adpatients": 4072
+    },
+    {
+        "date": "2021-05-05",
+        "npatients": 613355,
+        "adpatients": 3884
+    },
+    {
+        "date": "2021-05-06",
+        "npatients": 618197,
+        "adpatients": 4315
+    },
+    {
+        "date": "2021-05-07",
+        "npatients": 623703,
+        "adpatients": 6032
+    },
+    {
+        "date": "2021-05-08",
+        "npatients": 630197,
+        "adpatients": 6985
+    },
+    {
+        "date": "2021-05-09",
+        "npatients": 637210,
+        "adpatients": 6243
+    },
+    {
+        "date": "2021-05-10",
+        "npatients": 642970,
+        "adpatients": 4925
+    },
+    {
+        "date": "2021-05-11",
+        "npatients": 648851,
+        "adpatients": 6238
+    },
+    {
+        "date": "2021-05-12",
+        "npatients": 655777,
+        "adpatients": 7057
+    },
+    {
+        "date": "2021-05-13",
+        "npatients": 662688,
+        "adpatients": 6867
+    },
+    {
+        "date": "2021-05-14",
+        "npatients": 668979,
+        "adpatients": 6269
+    },
+    {
+        "date": "2021-05-15",
+        "npatients": 675121,
+        "adpatients": 6420
+    },
+    {
+        "date": "2021-05-16",
+        "npatients": 680292,
+        "adpatients": 5247
+    },
+    {
+        "date": "2021-05-17",
+        "npatients": 684939,
+        "adpatients": 3677
+    },
+    {
+        "date": "2021-05-18",
+        "npatients": 689816,
+        "adpatients": 5229
+    },
+    {
+        "date": "2021-05-19",
+        "npatients": 695360,
+        "adpatients": 5811
+    },
+    {
+        "date": "2021-05-20",
+        "npatients": 701255,
+        "adpatients": 5711
+    },
+    {
+        "date": "2021-05-21",
+        "npatients": 706620,
+        "adpatients": 5251
+    },
+    {
+        "date": "2021-05-22",
+        "npatients": 711360,
+        "adpatients": 5034
+    },
+    {
+        "date": "2021-05-23",
+        "npatients": 715940,
+        "adpatients": 4035
+    },
+    {
+        "date": "2021-05-24",
+        "npatients": 718984,
+        "adpatients": 2711
+    },
+    {
+        "date": "2021-05-25",
+        "npatients": 722605,
+        "adpatients": 3898
+    },
+    {
+        "date": "2021-05-26",
+        "npatients": 726912,
+        "adpatients": 4526
+    },
+    {
+        "date": "2021-05-27",
+        "npatients": 730936,
+        "adpatients": 4131
+    },
+    {
+        "date": "2021-05-28",
+        "npatients": 735092,
+        "adpatients": 3706
+    },
+    {
+        "date": "2021-05-29",
+        "npatients": 738713,
+        "adpatients": 3591
+    },
+    {
+        "date": "2021-05-30",
+        "npatients": 741524,
+        "adpatients": 2876
+    },
+    {
+        "date": "2021-05-31",
+        "npatients": 743743,
+        "adpatients": 1786
+    },
+    {
+        "date": "2021-06-01",
+        "npatients": 746158,
+        "adpatients": 2640
+    },
+    {
+        "date": "2021-06-02",
+        "npatients": 749213,
+        "adpatients": 3030
+    },
+    {
+        "date": "2021-06-03",
+        "npatients": 752080,
+        "adpatients": 2825
+    },
+    {
+        "date": "2021-06-04",
+        "npatients": 754669,
+        "adpatients": 2586
+    },
+    {
+        "date": "2021-06-05",
+        "npatients": 757325,
+        "adpatients": 2648
+    },
+    {
+        "date": "2021-06-06",
+        "npatients": 759398,
+        "adpatients": 2017
+    },
+    {
+        "date": "2021-06-07",
+        "npatients": 760886,
+        "adpatients": 1276
+    },
+    {
+        "date": "2021-06-08",
+        "npatients": 762613,
+        "adpatients": 1884
+    },
+    {
+        "date": "2021-06-09",
+        "npatients": 764784,
+        "adpatients": 2224
+    },
+    {
+        "date": "2021-06-10",
+        "npatients": 766894,
+        "adpatients": 2044
+    },
+    {
+        "date": "2021-06-11",
+        "npatients": 768812,
+        "adpatients": 1935
+    },
+    {
+        "date": "2021-06-12",
+        "npatients": 770791,
+        "adpatients": 1941
+    },
+    {
+        "date": "2021-06-13",
+        "npatients": 772198,
+        "adpatients": 1384
+    },
+    {
+        "date": "2021-06-14",
+        "npatients": 773268,
+        "adpatients": 930
+    },
+    {
+        "date": "2021-06-15",
+        "npatients": 774604,
+        "adpatients": 1418
+    },
+    {
+        "date": "2021-06-16",
+        "npatients": 776290,
+        "adpatients": 1698
+    },
+    {
+        "date": "2021-06-17",
+        "npatients": 777843,
+        "adpatients": 1550
+    },
+    {
+        "date": "2021-06-18",
+        "npatients": 779432,
+        "adpatients": 1619
+    },
+    {
+        "date": "2021-06-19",
+        "npatients": 780931,
+        "adpatients": 1509
+    },
+    {
+        "date": "2021-06-20",
+        "npatients": 782213,
+        "adpatients": 1304
+    },
+    {
+        "date": "2021-06-21",
+        "npatients": 783220,
+        "adpatients": 864
+    },
+    {
+        "date": "2021-06-22",
+        "npatients": 784567,
+        "adpatients": 1432
+    },
+    {
+        "date": "2021-06-23",
+        "npatients": 786353,
+        "adpatients": 1775
+    },
+    {
+        "date": "2021-06-24",
+        "npatients": 787988,
+        "adpatients": 1669
+    },
+    {
+        "date": "2021-06-25",
+        "npatients": 789735,
+        "adpatients": 1705
+    },
+    {
+        "date": "2021-06-26",
+        "npatients": 791346,
+        "adpatients": 1611
+    },
+    {
+        "date": "2021-06-27",
+        "npatients": 792641,
+        "adpatients": 1280
+    },
+    {
+        "date": "2021-06-28",
+        "npatients": 793701,
+        "adpatients": 989
+    },
+    {
+        "date": "2021-06-29",
+        "npatients": 795026,
+        "adpatients": 1375
+    },
+    {
+        "date": "2021-06-30",
+        "npatients": 796835,
+        "adpatients": 1811
+    },
+    {
+        "date": "2021-07-01",
+        "npatients": 798573,
+        "adpatients": 1741
+    },
+    {
+        "date": "2021-07-02",
+        "npatients": 800333,
+        "adpatients": 1774
+    },
+    {
+        "date": "2021-07-03",
+        "npatients": 802203,
+        "adpatients": 1864
+    },
+    {
+        "date": "2021-07-04",
+        "npatients": 803652,
+        "adpatients": 1479
+    },
+    {
+        "date": "2021-07-05",
+        "npatients": 804760,
+        "adpatients": 1021
+    },
+    {
+        "date": "2021-07-06",
+        "npatients": 806351,
+        "adpatients": 1658
+    },
+    {
+        "date": "2021-07-07",
+        "npatients": 808499,
+        "adpatients": 2182
+    },
+    {
+        "date": "2021-07-08",
+        "npatients": 810756,
+        "adpatients": 2239
+    },
+    {
+        "date": "2021-07-09",
+        "npatients": 813004,
+        "adpatients": 2260
+    },
+    {
+        "date": "2021-07-10",
+        "npatients": 815446,
+        "adpatients": 2452
+    },
+    {
+        "date": "2021-07-11",
+        "npatients": 817461,
+        "adpatients": 2022
+    },
+    {
+        "date": "2021-07-12",
+        "npatients": 819013,
+        "adpatients": 1492
+    },
+    {
+        "date": "2021-07-13",
+        "npatients": 821313,
+        "adpatients": 2378
+    },
+    {
+        "date": "2021-07-14",
+        "npatients": 824474,
+        "adpatients": 3172
+    },
+    {
+        "date": "2021-07-15",
+        "npatients": 827885,
+        "adpatients": 3408
+    },
+    {
+        "date": "2021-07-16",
+        "npatients": 831297,
+        "adpatients": 3419
+    },
+    {
+        "date": "2021-07-17",
+        "npatients": 835096,
+        "adpatients": 3871
+    },
+    {
+        "date": "2021-07-18",
+        "npatients": 838191,
+        "adpatients": 3093
+    },
+    {
+        "date": "2021-07-19",
+        "npatients": 840657,
+        "adpatients": 2318
+    },
+    {
+        "date": "2021-07-20",
+        "npatients": 844242,
+        "adpatients": 3743
+    },
+    {
+        "date": "2021-07-21",
+        "npatients": 849135,
+        "adpatients": 4933
+    },
+    {
+        "date": "2021-07-22",
+        "npatients": 854407,
+        "adpatients": 5387
+    },
+    {
+        "date": "2021-07-23",
+        "npatients": 858743,
+        "adpatients": 4204
+    },
+    {
+        "date": "2021-07-24",
+        "npatients": 862255,
+        "adpatients": 3576
+    },
+    {
+        "date": "2021-07-25",
+        "npatients": 867023,
+        "adpatients": 5009
+    },
+    {
+        "date": "2021-07-26",
+        "npatients": 872053,
+        "adpatients": 4661
+    },
+    {
+        "date": "2021-07-27",
+        "npatients": 879359,
+        "adpatients": 7619
+    },
+    {
+        "date": "2021-07-28",
+        "npatients": 888822,
+        "adpatients": 9570
+    },
+    {
+        "date": "2021-07-29",
+        "npatients": 899237,
+        "adpatients": 10687
+    },
+    {
+        "date": "2021-07-30",
+        "npatients": 910258,
+        "adpatients": 10728
+    },
+    {
+        "date": "2021-07-31",
+        "npatients": 922312,
+        "adpatients": 12329
+    },
+    {
+        "date": "2021-08-01",
+        "npatients": 932361,
+        "adpatients": 10162
+    },
+    {
+        "date": "2021-08-02",
+        "npatients": 941231,
+        "adpatients": 8325
+    },
+    {
+        "date": "2021-08-03",
+        "npatients": 952861,
+        "adpatients": 12062
+    },
+    {
+        "date": "2021-08-04",
+        "npatients": 966907,
+        "adpatients": 14204
+    },
+    {
+        "date": "2021-08-05",
+        "npatients": 982124,
+        "adpatients": 15249
+    },
+    {
+        "date": "2021-08-06",
+        "npatients": 997700,
+        "adpatients": 15630
+    },
+    {
+        "date": "2021-08-07",
+        "npatients": 1013190,
+        "adpatients": 15743
+    },
+    {
+        "date": "2021-08-08",
+        "npatients": 1027692,
+        "adpatients": 14459
+    },
+    {
+        "date": "2021-08-09",
+        "npatients": 1040009,
+        "adpatients": 12056
+    },
+    {
+        "date": "2021-08-10",
+        "npatients": 1050863,
+        "adpatients": 10567
+    },
+    {
+        "date": "2021-08-11",
+        "npatients": 1065910,
+        "adpatients": 15776
+    },
+    {
+        "date": "2021-08-12",
+        "npatients": 1084120,
+        "adpatients": 18893
+    },
+    {
+        "date": "2021-08-13",
+        "npatients": 1104601,
+        "adpatients": 20357
+    },
+    {
+        "date": "2021-08-14",
+        "npatients": 1124700,
+        "adpatients": 20133
+    },
+    {
+        "date": "2021-08-15",
+        "npatients": 1140857,
+        "adpatients": 17829
+    },
+    {
+        "date": "2021-08-16",
+        "npatients": 1156228,
+        "adpatients": 14826
+    },
+    {
+        "date": "2021-08-17",
+        "npatients": 1175455,
+        "adpatients": 19950
+    },
+    {
+        "date": "2021-08-18",
+        "npatients": 1198283,
+        "adpatients": 23910
+    },
+    {
+        "date": "2021-08-19",
+        "npatients": 1223602,
+        "adpatients": 25146
+    },
+    {
+        "date": "2021-08-20",
+        "npatients": 1248539,
+        "adpatients": 25859
+    },
+    {
+        "date": "2021-08-21",
+        "npatients": 1273652,
+        "adpatients": 25461
+    },
+    {
+        "date": "2021-08-22",
+        "npatients": 1296554,
+        "adpatients": 22273
+    },
+    {
+        "date": "2021-08-23",
+        "npatients": 1314531,
+        "adpatients": 16842
+    },
+    {
+        "date": "2021-08-24",
+        "npatients": 1335291,
+        "adpatients": 21561
+    },
+    {
+        "date": "2021-08-25",
+        "npatients": 1358980,
+        "adpatients": 24312
+    },
+    {
+        "date": "2021-08-26",
+        "npatients": 1385022,
+        "adpatients": 24968
+    },
+    {
+        "date": "2021-08-27",
+        "npatients": 1407589,
+        "adpatients": 24187
+    },
+    {
+        "date": "2021-08-28",
+        "npatients": 1430500,
+        "adpatients": 22732
+    },
+    {
+        "date": "2021-08-29",
+        "npatients": 1450487,
+        "adpatients": 19307
+    },
+    {
+        "date": "2021-08-30",
+        "npatients": 1465437,
+        "adpatients": 13625
+    },
+    {
+        "date": "2021-08-31",
+        "npatients": 1482253,
+        "adpatients": 17703
+    },
+    {
+        "date": "2021-09-01",
+        "npatients": 1503317,
+        "adpatients": 20025
+    },
+    {
+        "date": "2021-09-02",
+        "npatients": 1520761,
+        "adpatients": 18216
+    },
+    {
+        "date": "2021-09-03",
+        "npatients": 1537601,
+        "adpatients": 16729
+    },
+    {
+        "date": "2021-09-04",
+        "npatients": 1553059,
+        "adpatients": 16000
+    },
+    {
+        "date": "2021-09-05",
+        "npatients": 1567416,
+        "adpatients": 12891
+    },
+    {
+        "date": "2021-09-06",
+        "npatients": 1576550,
+        "adpatients": 8223
+    },
+    {
+        "date": "2021-09-07",
+        "npatients": 1587013,
+        "adpatients": 10589
+    },
+    {
+        "date": "2021-09-08",
+        "npatients": 1599121,
+        "adpatients": 12388
+    },
+    {
+        "date": "2021-09-09",
+        "npatients": 1609836,
+        "adpatients": 10383
+    },
+    {
+        "date": "2021-09-10",
+        "npatients": 1618989,
+        "adpatients": 8870
+    },
+    {
+        "date": "2021-09-11",
+        "npatients": 1628047,
+        "adpatients": 8793
+    },
+    {
+        "date": "2021-09-12",
+        "npatients": 1635492,
+        "adpatients": 7204
+    },
+    {
+        "date": "2021-09-13",
+        "npatients": 1640380,
+        "adpatients": 4161
+    },
+    {
+        "date": "2021-09-14",
+        "npatients": 1646240,
+        "adpatients": 6262
+    },
+    {
+        "date": "2021-09-15",
+        "npatients": 1652919,
+        "adpatients": 6799
+    },
+    {
+        "date": "2021-09-16",
+        "npatients": 1658926,
+        "adpatients": 5692
+    },
+    {
+        "date": "2021-09-17",
+        "npatients": 1664035,
+        "adpatients": 5091
+    },
+    {
+        "date": "2021-09-18",
+        "npatients": 1669033,
+        "adpatients": 4692
+    },
+    {
+        "date": "2021-09-19",
+        "npatients": 1672594,
+        "adpatients": 3395
+    },
+    {
+        "date": "2021-09-20",
+        "npatients": 1674994,
+        "adpatients": 2219
+    },
+    {
+        "date": "2021-09-21",
+        "npatients": 1676989,
+        "adpatients": 1758
+    },
+    {
+        "date": "2021-09-22",
+        "npatients": 1679818,
+        "adpatients": 3229
+    },
+    {
+        "date": "2021-09-23",
+        "npatients": 1683269,
+        "adpatients": 3598
+    },
+    {
+        "date": "2021-09-24",
+        "npatients": 1685738,
+        "adpatients": 2085
+    },
+    {
+        "date": "2021-09-25",
+        "npatients": 1688213,
+        "adpatients": 2661
+    },
+    {
+        "date": "2021-09-26",
+        "npatients": 1690496,
+        "adpatients": 2129
+    },
+    {
+        "date": "2021-09-27",
+        "npatients": 1691863,
+        "adpatients": 1128
+    },
+    {
+        "date": "2021-09-28",
+        "npatients": 1693429,
+        "adpatients": 1719
+    },
+    {
+        "date": "2021-09-29",
+        "npatients": 1695420,
+        "adpatients": 1972
+    },
+    {
+        "date": "2021-09-30",
+        "npatients": 1697085,
+        "adpatients": 1568
+    },
+    {
+        "date": "2021-10-01",
+        "npatients": 1698591,
+        "adpatients": 1443
+    },
+    {
+        "date": "2021-10-02",
+        "npatients": 1699841,
+        "adpatients": 1232
+    },
+    {
+        "date": "2021-10-03",
+        "npatients": 1700795,
+        "adpatients": 959
+    },
+    {
+        "date": "2021-10-04",
+        "npatients": 1701501,
+        "adpatients": 576
+    },
+    {
+        "date": "2021-10-05",
+        "npatients": 1702387,
+        "adpatients": 971
+    },
+    {
+        "date": "2021-10-06",
+        "npatients": 1703455,
+        "adpatients": 1117
+    },
+    {
+        "date": "2021-10-07",
+        "npatients": 1704442,
+        "adpatients": 969
+    },
+    {
+        "date": "2021-10-08",
+        "npatients": 1705306,
+        "adpatients": 824
+    },
+    {
+        "date": "2021-10-09",
+        "npatients": 1706084,
+        "adpatients": 770
+    },
+    {
+        "date": "2021-10-10",
+        "npatients": 1706656,
+        "adpatients": 546
+    },
+    {
+        "date": "2021-10-11",
+        "npatients": 1707064,
+        "adpatients": 359
+    },
+    {
+        "date": "2021-10-12",
+        "npatients": 1707606,
+        "adpatients": 609
+    },
+    {
+        "date": "2021-10-13",
+        "npatients": 1708312,
+        "adpatients": 723
+    },
+    {
+        "date": "2021-10-14",
+        "npatients": 1708924,
+        "adpatients": 612
+    },
+    {
+        "date": "2021-10-15",
+        "npatients": 1709449,
+        "adpatients": 522
+    },
+    {
+        "date": "2021-10-16",
+        "npatients": 1709948,
+        "adpatients": 502
+    },
+    {
+        "date": "2021-10-17",
+        "npatients": 1710356,
+        "adpatients": 425
+    },
+    {
+        "date": "2021-10-18",
+        "npatients": 1710644,
+        "adpatients": 223
+    },
+    {
+        "date": "2021-10-19",
+        "npatients": 1710986,
+        "adpatients": 367
+    },
+    {
+        "date": "2021-10-20",
+        "npatients": 1711355,
+        "adpatients": 387
+    },
+    {
+        "date": "2021-10-21",
+        "npatients": 1711695,
+        "adpatients": 334
+    },
+    {
+        "date": "2021-10-22",
+        "npatients": 1711999,
+        "adpatients": 324
+    },
+    {
+        "date": "2021-10-23",
+        "npatients": 1712290,
+        "adpatients": 277
+    },
+    {
+        "date": "2021-10-24",
+        "npatients": 1712529,
+        "adpatients": 229
+    },
+    {
+        "date": "2021-10-25",
+        "npatients": 1712689,
+        "adpatients": 147
+    },
+    {
+        "date": "2021-10-26",
+        "npatients": 1712947,
+        "adpatients": 309
+    },
+    {
+        "date": "2021-10-27",
+        "npatients": 1713287,
+        "adpatients": 310
+    },
+    {
+        "date": "2021-10-28",
+        "npatients": 1713552,
+        "adpatients": 268
+    },
+    {
+        "date": "2021-10-29",
+        "npatients": 1717896,
+        "adpatients": 291
+    },
+    {
+        "date": "2021-10-30",
+        "npatients": 1718177,
+        "adpatients": 283
+    },
+    {
+        "date": "2021-10-31",
+        "npatients": 1718417,
+        "adpatients": 215
+    },
+    {
+        "date": "2021-11-01",
+        "npatients": 1718513,
+        "adpatients": 80
+    },
+    {
+        "date": "2021-11-02",
+        "npatients": 1718704,
+        "adpatients": 216
+    },
+    {
+        "date": "2021-11-03",
+        "npatients": 1718931,
+        "adpatients": 259
+    },
+    {
+        "date": "2021-11-04",
+        "npatients": 1719122,
+        "adpatients": 145
+    },
+    {
+        "date": "2021-11-05",
+        "npatients": 1719317,
+        "adpatients": 220
+    }
+]

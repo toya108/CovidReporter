@@ -1,10 +1,10 @@
 import Foundation
 
-struct InfectedPeopleNumbers: Codable, Hashable {
+struct InfectionNumbers: Codable, Hashable {
     let itemList: [Item]
 }
 
-extension InfectedPeopleNumbers {
+extension InfectionNumbers {
 
     struct ErrorInfo: Codable, Hashable {
         let errorFlag: Int
