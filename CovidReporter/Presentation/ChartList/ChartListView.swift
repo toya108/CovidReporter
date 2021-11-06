@@ -2,29 +2,19 @@ import SwiftUI
 
 struct ChartListView: View {
 
-    @StateObject var viewModel = ChartListViewModel()
+    @StateObject var viewModel = ChartListViewModel(
+        getPrefecturesRepository: .init(),
+        setPrefecturesRepository: .init(),
+        deletePrefecturesRepository: .init()
+    )
 
     var body: some View {
         NavigationView {
             List {
-                InfectionChartView(prefecture: .all).frame(minHeight: 250)
-                InfectionChartView(prefecture: .hokkaido).frame(minHeight: 250)
-                Button(
-                    action: {
-
-                    },
-                    label: {
-                        HStack {
-                            Spacer()
-                            Image(systemName: "plus.circle.fill")
-                                .foregroundColor(Color(uiColor: .label))
-                                .frame(height: 64)
-                            Spacer()
-                        }
-
-                    }
-                )
-                
+                ForEach(viewModel.prefectures) {
+                    InfectionChartView(prefecture: $0).frame(height: 250)
+                }
+                SelectingPrefectureMenu(viewModel: viewModel)
             }
             .navigationBarTitle(Text("コロミル"), displayMode: .inline)
             .navigationBarItems(
@@ -37,6 +27,9 @@ struct ChartListView: View {
                     }
                 )
             )
+        }
+        .onAppear {
+            viewModel.updatePrefectures()
         }
     }
 }
