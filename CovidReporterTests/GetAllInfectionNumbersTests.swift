@@ -4,8 +4,7 @@ import XCTest
 class GetAllInfectionNumbersTests: XCTestCase {
 
     func testExample() async throws {
-        let result = try await Repositories.AllInfectionNumbers.Get().request(
-            parameters: .init(),
+        let result = try await Repositories.InfectionNumbers.All.Get().request(
             shouldUseTestData: true
         )
 
