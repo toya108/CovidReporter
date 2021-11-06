@@ -1,4 +1,4 @@
-enum Prefecture: String, CaseIterable {
+enum Prefecture: String, CaseIterable, Decodable {
     case all = "全国"
     case hokkaido = "北海道"
     case aomori = "青森県"

@@ -7,4 +7,7 @@ struct Repositories {
             typealias Get = Repository<GetInfectionNumbers>
         }
     }
+    struct Prefectures {
+        typealias Get = Repository<GetPrefecturesRequest>
+    }
 }
