@@ -21,3 +21,15 @@ struct Repository<T: RequestProtocol>: RepositoryProtocol {
     }
 
 }
+
+extension Repository where T.Parameters == EmptyParameters {
+    func request(
+        parameters: T.Parameters = .init(),
+        shouldUseTestData: Bool = false
+    ) async throws -> T.Response {
+        try await APIClient().request(
+            item: T(parameters: parameters),
+            shouldUseTestData: shouldUseTestData
+        )
+    }
+}
