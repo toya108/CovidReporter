@@ -11,6 +11,7 @@ protocol RequestProtocol {
     var body: Data { get throws }
     var baseURL: String { get }
     var path: String { get }
+    var localDataInterceptor: (Parameters) -> Response? { get }
 
     #if DEBUG
     var testDataPath: URL? { get }
@@ -57,6 +58,8 @@ extension RequestProtocol {
             $0[$1.rawValue] = $1.value
         }
     }
+
+    var localDataInterceptor: (Parameters) -> Response? {{ _ in nil }}
 }
 
 private extension Encodable {
