@@ -13,13 +13,14 @@ struct BarChart: UIViewRepresentable {
 
     func makeUIView(context: Context) -> BarChartView {
         let chart = BarChartView()
+        chart.scaleXEnabled = false
+        chart.scaleYEnabled = false
         chart.xAxis.labelPosition = .bottom
         chart.xAxis.granularity = 1.0
         chart.xAxis.drawGridLinesEnabled = false
         chart.xAxis.drawAxisLineEnabled = false
         chart.leftAxis.drawZeroLineEnabled = true
         chart.leftAxis.drawAxisLineEnabled = false
-
         chart.rightAxis.enabled = false
         chart.legend.enabled = false
 
