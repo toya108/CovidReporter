@@ -16,4 +16,14 @@ struct BarChartDataSource {
     var latestAdpatients: Double {
         self.dataEntryConvertibles.last?.yData ?? 0.0
     }
+
+    var values: [Double] {
+        self.dataEntryConvertibles.map(\.yData)
+    }
+
+    var dateStrings: [String] {
+        self.dataEntryConvertibles.map {
+            DateConverter.convert(from: $0.dateForSource, template: .date)
+        }
+    }
 }

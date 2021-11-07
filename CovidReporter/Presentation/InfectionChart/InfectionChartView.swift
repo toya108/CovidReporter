@@ -50,7 +50,7 @@ struct InfectionChartView: View {
                             ).buttonStyle(.plain)
                         }
                     }
-                    BarChart(dataSource: dataSource)
+                    VerticalBarChart(dataSource: dataSource)
                 }
                 .padding(4)
 

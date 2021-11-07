@@ -1,7 +1,7 @@
 import Charts
 import SwiftUI
 
-struct BarChart: UIViewRepresentable {
+struct VerticalBarChart: UIViewRepresentable {
 
     var dataSource: BarChartDataSource
 
