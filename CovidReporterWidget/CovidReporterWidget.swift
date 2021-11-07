@@ -43,7 +43,6 @@ struct Provider: IntentTimelineProvider {
         in context: Context,
         completion: @escaping (Timeline<Entry>) -> Void
     ) {
-
         Task {
             do {
                 let infectionNumbers = try await getAllInfectionNumbersRepository.request()
@@ -53,9 +52,14 @@ struct Provider: IntentTimelineProvider {
                     dataSource: .init(dataEntryConvertibles: latest),
                     prefecture: .all
                 )
+                let refreshInterval = Calendar.current.date(
+                    byAdding: .hour,
+                    value: 6,
+                    to: Date()
+                ) ?? Date()
                 let timeline = Timeline(
                     entries: [entry],
-                    policy: .after(Date().addingTimeInterval(60 * 10))
+                    policy: .after(refreshInterval)
                 )
                 completion(timeline)
             } catch {
