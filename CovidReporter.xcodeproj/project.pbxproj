@@ -272,6 +272,15 @@
 			path = CovidReporterIntentExtension;
 			sourceTree = "<group>";
 		};
+		9E3306F72738376B0059E4A2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				9E95B9542734291700844507 /* MockInfectionNumbers.json */,
+				9EB392682736458C00A0B820 /* MockAllInfectionNumbers.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		9E3D3DA02733E6EA008440AC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,8 +329,6 @@
 				9E7569AD2732BF8500E74936 /* Assets.xcassets */,
 				9E7569D82732CA3000E74936 /* Settings.bundle */,
 				9E7569AF2732BF8500E74936 /* Preview Content */,
-				9E95B9542734291700844507 /* MockInfectionNumbers.json */,
-				9EB392682736458C00A0B820 /* MockAllInfectionNumbers.json */,
 			);
 			path = CovidReporter;
 			sourceTree = "<group>";
@@ -367,6 +374,7 @@
 		9E7569E62732CFF500E74936 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9E3306F72738376B0059E4A2 /* Stubs */,
 				9E7569EB2732D0C800E74936 /* Responses */,
 				9E7569E82732D02700E74936 /* Requests */,
 				9E7569E72732D00C00E74936 /* Core */,
