@@ -11,35 +11,46 @@ import WidgetKit
     }
 
      var body: some View {
-         GeometryReader { content in
-             VStack {
-                 HStack {
-                     Text(entry.prefecture.rawValue).fontWeight(.heavy)
-                     // Textの初期化時にIntをインラインで埋め込むと表示されない不具合のため一時変数で宣言しています。
-                     let latestAdaptients = "(\(Int(entry.dataSource.latestAdpatients))人)"
-                     Text(entry.dataSource.latestDate.description + "新規感染者数" + latestAdaptients)
-                         .font(.system(size: 12))
-                 }
-                 BarChart()
-                     .data(entry.dataSource.values)
-                     .chartStyle(
-                        .init(
-                            backgroundColor: .teal,
-                            foregroundColor: .init(.init(uiColor: .systemTeal))
-                        )
-                     )
-                 HStack(spacing: 16) {
-                     let width = content.size.width / CGFloat(entry.dataSource.dateStrings.count)
-                     ForEach(entry.dataSource.dateStrings, id: \.self) {
-                         Text($0).font(.system(size: 11))
-                             .lineLimit(1)
-                             .minimumScaleFactor(0.8)
-                             .frame(maxWidth: width)
-                     }
-                 }
+         VStack {
+             HStack {
+                 Text(entry.prefecture.rawValue).fontWeight(.heavy)
+                 // Textの初期化時にIntをインラインで埋め込むと表示されない不具合のため一時変数で宣言しています。
+                 let latestAdaptients = "(\(Int(entry.dataSource.latestAdpatients))人)"
+                 Text(entry.dataSource.latestDate.description + "新規感染者数" + latestAdaptients)
+                     .font(.system(size: 12))
              }
-             .padding(16)
+             let data = makeData(from: entry)
+             BarChart(chartData: data)
+                 .yAxisGrid(chartData: data)
+                 .xAxisLabels(chartData: data)
          }
+         .padding(12)
+     }
+
+     private func makeData(from entry: InfectionNumberChartEntry) -> BarChartData {
+         let dataSet = BarDataSet(
+            dataPoints: entry.dataSource.dataEntryConvertibles.map {
+                .init(
+                    value: $0.yData,
+                    xAxisLabel: DateConverter.convert(from: $0.dateForSource, template: .date)
+                )
+            }
+         )
+         let gridStyle = GridStyle(
+            numberOfLines: 4,
+            lineColour: Color(.lightGray).opacity(0.25),
+            lineWidth: 1
+         )
+         let data = BarChartData(
+            dataSets: dataSet,
+            barStyle: .init(
+                barWidth: 0.6,
+                colourFrom: .barStyle,
+                colour: .init(colour: Color(uiColor: .systemTeal))
+            ),
+            chartStyle: .init(yAxisGridStyle: gridStyle)
+         )
+         return data
      }
  }
 

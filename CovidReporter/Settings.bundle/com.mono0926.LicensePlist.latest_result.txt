@@ -2,8 +2,6 @@ name: APIKit, nameSpecified: APIKit, owner: ishkawa, version: 5.2.0
 
 name: Charts, nameSpecified: Charts, owner: danielgindi, version: 4.0.1
 
-name: ChartView, nameSpecified: SwiftUICharts, owner: AppPear, version: 2.0.0-beta.2
-
 name: HeliumLogger, nameSpecified: HeliumLogger, owner: Kitura, version: 1.9.200
 
 name: LicensePlist, nameSpecified: LicensePlist, owner: mono0926, version: 3.14.4
@@ -27,6 +25,8 @@ name: swift-numerics, nameSpecified: swift-numerics, owner: apple, version: 0.1.
 name: swift-snapshot-testing, nameSpecified: SnapshotTesting, owner: pointfreeco, version: 1.9.0
 
 name: SwiftLint, nameSpecified: SwiftLint, owner: realm, version: 0.45.0
+
+name: SwiftUICharts, nameSpecified: SwiftUICharts, owner: willdale, version: 2.9.4
 
 name: SwiftyTextTable, nameSpecified: SwiftyTextTable, owner: scottrhoyt, version: 0.9.0
 
