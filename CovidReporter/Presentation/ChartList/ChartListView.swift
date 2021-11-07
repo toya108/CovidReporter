@@ -18,17 +18,6 @@ struct ChartListView: View {
                 SelectingPrefectureMenu(viewModel: viewModel)
             }
             .navigationBarTitle(Text("コロミル"), displayMode: .inline)
-            .navigationBarItems(
-                trailing: Button(
-                    action: {
-
-                    },
-                    label: {
-                        Image(systemName: "gear")
-                            .foregroundColor(Color(uiColor: .label))
-                    }
-                )
-            )
         }
         .onAppear {
             viewModel.updatePrefectures()
