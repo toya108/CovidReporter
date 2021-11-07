@@ -31,6 +31,8 @@ import WidgetKit
                      let width = content.size.width / CGFloat(entry.dataSource.dateStrings.count)
                      ForEach(entry.dataSource.dateStrings, id: \.self) {
                          Text($0).font(.system(size: 11))
+                             .lineLimit(1)
+                             .minimumScaleFactor(0.8)
                              .frame(maxWidth: width)
                      }
                  }
