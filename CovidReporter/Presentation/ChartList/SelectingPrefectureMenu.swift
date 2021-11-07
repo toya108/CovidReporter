@@ -14,8 +14,10 @@ struct SelectingPrefectureMenu: View {
                 ) {
                     let prefecture = $0
                     Button(prefecture.rawValue) {
-                        viewModel.set(prefecture: prefecture)
-                        viewModel.updatePrefectures()
+                        withAnimation {
+                            viewModel.set(prefecture: prefecture)
+                            viewModel.updatePrefectures()
+                        }
                     }
                 }
             },
