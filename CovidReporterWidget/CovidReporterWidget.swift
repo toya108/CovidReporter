@@ -5,7 +5,10 @@ import SwiftUICharts
 
 struct Provider: IntentTimelineProvider {
 
+    typealias Intent = ConfigurationIntent
+
     private let getAllInfectionNumbersRepository = Repositories.InfectionNumbers.All.Get()
+    private let getInfectionNumbersRepository = Repositories.InfectionNumbers.Prefecture.Get()
 
     func placeholder(in context: Context) -> InfectionNumberChartEntry {
         InfectionNumberChartEntry(
@@ -23,15 +26,14 @@ struct Provider: IntentTimelineProvider {
 
         Task {
             do {
-                let infectionNumbers = try await getAllInfectionNumbersRepository.request()
-                let latest = Array(infectionNumbers.suffix(7))
+                let prefecture = Prefecture(rawValue: configuration.prefecture ?? "") ?? .all
+                let sources = try await fetchInfectionNumbers(prefecture: prefecture)
                 let entry = InfectionNumberChartEntry(
                     date: Date(),
-                    dataSource: .init(dataEntryConvertibles: latest),
-                    prefecture: .all
+                    dataSource: .init(dataEntryConvertibles: sources),
+                    prefecture: prefecture
                 )
                 completion(entry)
-
             } catch {
 
             }
@@ -45,12 +47,12 @@ struct Provider: IntentTimelineProvider {
     ) {
         Task {
             do {
-                let infectionNumbers = try await getAllInfectionNumbersRepository.request()
-                let latest = Array(infectionNumbers.suffix(7))
+                let prefecture = Prefecture(rawValue: configuration.prefecture ?? "") ?? .all
+                let sources = try await fetchInfectionNumbers(prefecture: prefecture)
                 let entry = InfectionNumberChartEntry(
                     date: Date(),
-                    dataSource: .init(dataEntryConvertibles: latest),
-                    prefecture: .all
+                    dataSource: .init(dataEntryConvertibles: sources),
+                    prefecture: prefecture
                 )
                 let refreshInterval = Calendar.current.date(
                     byAdding: .hour,
@@ -67,6 +69,56 @@ struct Provider: IntentTimelineProvider {
             }
         }
     }
+
+    func fetchInfectionNumbers(prefecture: Prefecture) async throws -> [BarChartDataEntryConvertible] {
+        prefecture == .all
+        ? try await fetchAllInfectionNumbers()
+        : try await fetchInfectionNumbers(per: prefecture)
+    }
+
+    private func fetchAllInfectionNumbers() async throws -> [BarChartDataEntryConvertible] {
+        let infectionNumbers = try await getAllInfectionNumbersRepository.request()
+        return  Array(infectionNumbers.suffix(7))
+    }
+
+    private func fetchInfectionNumbers(
+        per prefecture: Prefecture
+    ) async throws -> [BarChartDataEntryConvertible] {
+
+        let days = DateGenerator.generatePastDays(from: Date(), difference: 1, to: 8).map {
+            DateConverter.convert(from: $0).filter { $0 != "/" }
+        }
+        async let first = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[0], dataName: prefecture.rawValue)
+        )
+        async let second = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[1], dataName: prefecture.rawValue)
+        )
+        async let third = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[2], dataName: prefecture.rawValue)
+        )
+        async let fourth = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[3], dataName: prefecture.rawValue)
+        )
+        async let fifth = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[4], dataName: prefecture.rawValue)
+        )
+        async let sixth = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[5], dataName: prefecture.rawValue)
+        )
+        async let seventh = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[6], dataName: prefecture.rawValue)
+        )
+        async let eigth = self.getInfectionNumbersRepository.request(
+            parameters: .init(date: days[7], dataName: prefecture.rawValue)
+        )
+
+        let infectionNumbers = try await [
+            eigth, seventh, sixth, fifth, fourth, third, second, first
+        ]
+        return AdpatientsCalculator.addAdpatients(from: infectionNumbers)
+    }
+
 }
 
 struct InfectionNumberChartEntry: TimelineEntry {
