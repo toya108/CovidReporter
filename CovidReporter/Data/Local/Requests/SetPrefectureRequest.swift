@@ -6,7 +6,7 @@ public struct SetPrefecturesRequest: LocalRequest {
 
     var parameters: Prefecture
 
-    func intercept(_ parameter: Prefecture) -> EmptyResponse? {
+    func intercept(_ parameter: Prefecture) -> EmptyResponse {
         var prefectures = LocalDataHolder.prefectures ?? []
         prefectures.append(parameter.rawValue)
         LocalDataHolder.prefectures = prefectures

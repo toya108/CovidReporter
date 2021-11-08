@@ -36,7 +36,9 @@ final class InfectionChartViewModel: ObservableObject {
         return Array(infectionNumbers.suffix(7))
     }
 
-    private func fetchInfectionNumbers(per prefecture: Prefecture) async throws -> [BarChartDataEntryConvertible] {
+    private func fetchInfectionNumbers(
+        per prefecture: Prefecture
+    ) async throws -> [BarChartDataEntryConvertible] {
 
         let days = DateGenerator.generatePastDays(from: Date(), difference: 1, to: 8).map {
             DateConverter.convert(from: $0).filter { $0 != "/" }

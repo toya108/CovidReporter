@@ -15,8 +15,15 @@
 		9E3306F12738170C0059E4A2 /* Prefectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E95B95F2734CB3800844507 /* Prefectures.swift */; };
 		9E3306F4273823800059E4A2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3306F3273823800059E4A2 /* SwiftUICharts */; };
 		9E3306F6273827550059E4A2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9E3306F5273827550059E4A2 /* SwiftUICharts */; };
+		9E3306FB2738B0860059E4A2 /* GetPrefecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3306FA2738B0860059E4A2 /* GetPrefecturesTests.swift */; };
+		9E3307012738B4460059E4A2 /* SetPrefecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3307002738B4460059E4A2 /* SetPrefecturesTests.swift */; };
+		9E3307032738B53A0059E4A2 /* DeletePrefecturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3307022738B53A0059E4A2 /* DeletePrefecturesTests.swift */; };
 		9E3D3DA22733E6FD008440AC /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3DA12733E6FD008440AC /* RepositoryProtocol.swift */; };
 		9E3D3DA42733E806008440AC /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3DA32733E806008440AC /* Repositories.swift */; };
+		9E5418C02738B828007027DE /* DateGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5418BF2738B828007027DE /* DateGeneratorTests.swift */; };
+		9E5418C22738B9E5007027DE /* DateConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5418C12738B9E5007027DE /* DateConverterTests.swift */; };
+		9E5418C42738D732007027DE /* AdpatientsCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5418C32738D732007027DE /* AdpatientsCalculatorTests.swift */; };
+		9E5418C62738D9D4007027DE /* BarChartDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5418C52738D9D4007027DE /* BarChartDataSourceTests.swift */; };
 		9E7569AA2732BF8400E74936 /* CovidReporterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7569A92732BF8400E74936 /* CovidReporterApp.swift */; };
 		9E7569AE2732BF8500E74936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7569AD2732BF8500E74936 /* Assets.xcassets */; };
 		9E7569B12732BF8500E74936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7569B02732BF8500E74936 /* Preview Assets.xcassets */; };
@@ -48,7 +55,6 @@
 		9EBFB6812736795B006B26E2 /* GetPrefecturesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFB6802736795B006B26E2 /* GetPrefecturesRequest.swift */; };
 		9EBFB68427367AB9006B26E2 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFB68327367AB9006B26E2 /* UserDefaultsStorage.swift */; };
 		9EBFB68627367B0C006B26E2 /* LocalDataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFB68527367B0C006B26E2 /* LocalDataHolder.swift */; };
-		9EBFB6882736A923006B26E2 /* GetPrefectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBFB6872736A923006B26E2 /* GetPrefectureTests.swift */; };
 		9EC5E06D27357347003D2FCB /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5E06C27357347003D2FCB /* DateConverter.swift */; };
 		9EC5E073273573FF003D2FCB /* AdpatientsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5E072273573FF003D2FCB /* AdpatientsCalculator.swift */; };
 		9EC5E07527357438003D2FCB /* InfectionNumberPerDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5E07427357438003D2FCB /* InfectionNumberPerDay.swift */; };
@@ -156,8 +162,15 @@
 		9E3306E52738134A0059E4A2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		9E3306E72738134A0059E4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3306EF273813DE0059E4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E3306FA2738B0860059E4A2 /* GetPrefecturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrefecturesTests.swift; sourceTree = "<group>"; };
+		9E3307002738B4460059E4A2 /* SetPrefecturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPrefecturesTests.swift; sourceTree = "<group>"; };
+		9E3307022738B53A0059E4A2 /* DeletePrefecturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePrefecturesTests.swift; sourceTree = "<group>"; };
 		9E3D3DA12733E6FD008440AC /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
 		9E3D3DA32733E806008440AC /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		9E5418BF2738B828007027DE /* DateGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGeneratorTests.swift; sourceTree = "<group>"; };
+		9E5418C12738B9E5007027DE /* DateConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverterTests.swift; sourceTree = "<group>"; };
+		9E5418C32738D732007027DE /* AdpatientsCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdpatientsCalculatorTests.swift; sourceTree = "<group>"; };
+		9E5418C52738D9D4007027DE /* BarChartDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDataSourceTests.swift; sourceTree = "<group>"; };
 		9E7569A62732BF8400E74936 /* CovidReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7569A92732BF8400E74936 /* CovidReporterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidReporterApp.swift; sourceTree = "<group>"; };
 		9E7569AD2732BF8500E74936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,7 +206,6 @@
 		9EBFB6802736795B006B26E2 /* GetPrefecturesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrefecturesRequest.swift; sourceTree = "<group>"; };
 		9EBFB68327367AB9006B26E2 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		9EBFB68527367B0C006B26E2 /* LocalDataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataHolder.swift; sourceTree = "<group>"; };
-		9EBFB6872736A923006B26E2 /* GetPrefectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrefectureTests.swift; sourceTree = "<group>"; };
 		9EC5E06C27357347003D2FCB /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		9EC5E072273573FF003D2FCB /* AdpatientsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdpatientsCalculator.swift; sourceTree = "<group>"; };
 		9EC5E07427357438003D2FCB /* InfectionNumberPerDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectionNumberPerDay.swift; sourceTree = "<group>"; };
@@ -346,7 +358,13 @@
 			children = (
 				9E7569BA2732BF8500E74936 /* GetInfectionNumbersTests.swift */,
 				9EB3926A273645E000A0B820 /* GetAllInfectionNumbersTests.swift */,
-				9EBFB6872736A923006B26E2 /* GetPrefectureTests.swift */,
+				9E3306FA2738B0860059E4A2 /* GetPrefecturesTests.swift */,
+				9E3307002738B4460059E4A2 /* SetPrefecturesTests.swift */,
+				9E3307022738B53A0059E4A2 /* DeletePrefecturesTests.swift */,
+				9E5418BF2738B828007027DE /* DateGeneratorTests.swift */,
+				9E5418C12738B9E5007027DE /* DateConverterTests.swift */,
+				9E5418C32738D732007027DE /* AdpatientsCalculatorTests.swift */,
+				9E5418C52738D9D4007027DE /* BarChartDataSourceTests.swift */,
 			);
 			path = CovidReporterTests;
 			sourceTree = "<group>";
@@ -416,7 +434,6 @@
 		9E95B958273431E300844507 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9EEEF6F32736D448002F1585 /* Settings */,
 				9EC5E086273636C6003D2FCB /* ChartList */,
 				9EC5E087273636D2003D2FCB /* InfectionChart */,
 				9EC5E088273636E5003D2FCB /* BarChart */,
@@ -458,6 +475,7 @@
 			children = (
 				9E95B9612734CC6500844507 /* DateGenerator.swift */,
 				9EC5E06C27357347003D2FCB /* DateConverter.swift */,
+				9EC5E072273573FF003D2FCB /* AdpatientsCalculator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -474,7 +492,6 @@
 			isa = PBXGroup;
 			children = (
 				9EC5E07427357438003D2FCB /* InfectionNumberPerDay.swift */,
-				9EC5E072273573FF003D2FCB /* AdpatientsCalculator.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -517,13 +534,6 @@
 				9EEEF6EF2736C178002F1585 /* DeletePrefectureRequest.swift */,
 			);
 			path = Requests;
-			sourceTree = "<group>";
-		};
-		9EEEF6F32736D448002F1585 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		9EEEF6FE27376340002F1585 /* Frameworks */ = {
@@ -852,9 +862,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5418C62738D9D4007027DE /* BarChartDataSourceTests.swift in Sources */,
+				9E3306FB2738B0860059E4A2 /* GetPrefecturesTests.swift in Sources */,
 				9E7569BB2732BF8500E74936 /* GetInfectionNumbersTests.swift in Sources */,
-				9EBFB6882736A923006B26E2 /* GetPrefectureTests.swift in Sources */,
 				9EB3926B273645E000A0B820 /* GetAllInfectionNumbersTests.swift in Sources */,
+				9E5418C22738B9E5007027DE /* DateConverterTests.swift in Sources */,
+				9E5418C42738D732007027DE /* AdpatientsCalculatorTests.swift in Sources */,
+				9E5418C02738B828007027DE /* DateGeneratorTests.swift in Sources */,
+				9E3307012738B4460059E4A2 /* SetPrefecturesTests.swift in Sources */,
+				9E3307032738B53A0059E4A2 /* DeletePrefecturesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1111,6 +1127,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidReporter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "コロミル";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1142,6 +1159,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidReporter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "コロミル";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1266,7 +1284,7 @@
 				DEVELOPMENT_TEAM = JXYB4XKM6U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidReporterWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CovidReporterWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = "コロミル";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1293,7 +1311,7 @@
 				DEVELOPMENT_TEAM = JXYB4XKM6U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidReporterWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CovidReporterWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = "コロミル";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

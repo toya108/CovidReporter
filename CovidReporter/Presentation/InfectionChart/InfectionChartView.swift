@@ -35,7 +35,7 @@ struct InfectionChartView: View {
                         Text(prefecture.rawValue).fontWeight(.heavy)
                         Spacer()
                         Text(
-                            "\(dataSource.latestDate) 新規感染者数(\(Int(dataSource.latestAdpatients))人)"
+                            "\(dataSource.latestDateString) 新規感染者数(\(Int(dataSource.latestAdpatients))人)"
                         )
                         if prefecture != .all {
                             Button(

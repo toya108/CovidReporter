@@ -1,6 +1,6 @@
 struct LocalDataHolder {
 
-    @UserDefaultsStorage(key: UserDefaultKey.prefectures)
+    @UserDefaultsStorage(key: .prefectures)
     static var prefectures: [String]?
     
 }

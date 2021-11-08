@@ -16,7 +16,7 @@ import WidgetKit
                  Text(entry.prefecture.rawValue).fontWeight(.heavy)
                  // Textの初期化時にIntをインラインで埋め込むと表示されない不具合のため一時変数で宣言しています。
                  let latestAdaptients = "(\(Int(entry.dataSource.latestAdpatients))人)"
-                 Text(entry.dataSource.latestDate.description + "新規感染者数" + latestAdaptients)
+                 Text(entry.dataSource.latestDateString + "新規感染者数" + latestAdaptients)
                      .font(.system(size: 12))
              }
              let data = makeData(from: entry)
@@ -31,7 +31,7 @@ import WidgetKit
          let dataSet = BarDataSet(
             dataPoints: entry.dataSource.dataEntryConvertibles.map {
                 .init(
-                    value: $0.yData,
+                    value: $0.xData,
                     xAxisLabel: DateConverter.convert(from: $0.dateForSource, template: .date)
                 )
             }
