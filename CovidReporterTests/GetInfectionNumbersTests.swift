@@ -3,7 +3,7 @@ import XCTest
 
 class GetInfectionNumbersTests: XCTestCase {
 
-    func testExample() async throws {
+    func testGetInfectionNumbers() async throws {
         let result = try await Repositories.InfectionNumbers.Prefecture.Get().request(
             parameters: .init(date: "20211101", dataName: nil),
             shouldUseTestData: true
