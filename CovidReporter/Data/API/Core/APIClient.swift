@@ -16,10 +16,6 @@ struct APIClient {
 
         let urlRequest = try await createURLRequest(item)
 
-        if let cache = URLCache.shared.cachedResponse(for: urlRequest) {
-            return try await self.decode(data: cache.data)
-        }
-
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
         guard

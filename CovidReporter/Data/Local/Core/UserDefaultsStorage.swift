@@ -3,16 +3,16 @@ import Foundation
 @propertyWrapper
 final class UserDefaultsStorage<T: UserDefaultConvertible> {
 
-    private let key: String
+    private let key: UserDefaultKey
 
-    init(key: String) {
+    init(key: UserDefaultKey) {
         self.key = key
     }
 
     var wrappedValue: T? {
         get {
             guard
-                let object = UserDefaults.standard.object(forKey: self.key),
+                let object = UserDefaults.standard.object(forKey: self.key.rawValue),
                 let value = T(with: object)
             else  {
                 return nil
@@ -21,16 +21,24 @@ final class UserDefaultsStorage<T: UserDefaultConvertible> {
 
         } set {
             if let object = newValue?.toUserDefaultObject() {
-                UserDefaults.standard.set(object, forKey: self.key)
+                UserDefaults.standard.set(object, forKey: self.key.rawValue)
             } else {
-                UserDefaults.standard.removeObject(forKey: self.key)
+                UserDefaults.standard.removeObject(forKey: self.key.rawValue)
             }
         }
     }
 }
 
-struct UserDefaultKey {
-    static let prefectures = "prefectures"
+enum UserDefaultKey: String, CaseIterable {
+    case prefectures
+}
+
+extension UserDefaults {
+    func resetAllKeys() {
+        UserDefaultKey.allCases.map(\.rawValue).forEach {
+            UserDefaults.standard.removeObject(forKey: $0)
+        }
+    }
 }
 
 protocol UserDefaultConvertible {

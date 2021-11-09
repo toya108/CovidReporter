@@ -10,26 +10,23 @@ struct ChartListView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.prefectures) {
-                    InfectionChartView(prefecture: $0, parentViewModel: viewModel)
-                        .frame(height: 250)
-                }
-                SelectingPrefectureMenu(viewModel: viewModel)
-            }
-            .navigationBarTitle(Text("コロミル"), displayMode: .inline)
-            .navigationBarItems(
-                trailing: Button(
-                    action: {
-
-                    },
-                    label: {
-                        Image(systemName: "gear")
-                            .foregroundColor(Color(uiColor: .label))
+            VStack {
+                List {
+                    ForEach(viewModel.prefectures) {
+                        InfectionChartView(prefecture: $0, parentViewModel: viewModel)
+                            .frame(height: 250)
                     }
-                )
-            )
+                    SelectingPrefectureMenu(viewModel: viewModel)
+                }
+                .navigationTitle("コロミル")
+                .navigationBarTitleDisplayMode(.inline)
+
+                Text("※ 内閣官房新型コロナウイルス感染症対策推進室の[オープンデータ](https://corona.go.jp/dashboard/)を元に表示しています。")
+                    .font(.system(size: 11))
+                    .padding()
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             viewModel.updatePrefectures()
         }

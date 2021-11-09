@@ -21,7 +21,7 @@ final class ChartListViewModel: ObservableObject {
     }
 
     func updatePrefectures() {
-        self.prefectures = [.all] + (getPrefecturesRepository.request() ?? [])
+        self.prefectures = [.all] + (getPrefecturesRepository.request())
     }
 
     func set(prefecture: Prefecture) {

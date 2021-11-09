@@ -1,7 +1,7 @@
 import Charts
 import SwiftUI
 
-struct BarChart: UIViewRepresentable {
+struct VerticalBarChart: UIViewRepresentable {
 
     var dataSource: BarChartDataSource
 
@@ -34,7 +34,7 @@ struct BarChart: UIViewRepresentable {
     }
 
     private var data: ChartData {
-        let dataSet = BarChartDataSet(entries: dataSource.dataEntryConvertibles.entries)
+        let dataSet = BarChartDataSet(entries: dataSource.entries)
         dataSet.colors = [.systemTeal]
         dataSet.valueFont = NSUIFont.systemFont(ofSize: 10)
         let data = BarChartData(dataSet: dataSet)

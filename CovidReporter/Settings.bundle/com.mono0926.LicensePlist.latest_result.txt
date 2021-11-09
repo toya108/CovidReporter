@@ -26,6 +26,8 @@ name: swift-snapshot-testing, nameSpecified: SnapshotTesting, owner: pointfreeco
 
 name: SwiftLint, nameSpecified: SwiftLint, owner: realm, version: 0.45.0
 
+name: SwiftUICharts, nameSpecified: SwiftUICharts, owner: willdale, version: 2.9.4
+
 name: SwiftyTextTable, nameSpecified: SwiftyTextTable, owner: scottrhoyt, version: 0.9.0
 
 name: SWXMLHash, nameSpecified: SWXMLHash, owner: drmohundro, version: 5.0.2

@@ -33,7 +33,7 @@ extension Repository where T: APIRequestProtocol, T.Parameters == EmptyParameter
 extension Repository where T: LocalRequest {
 
     @discardableResult
-    func request(parameters: T.Parameters) -> T.Response? {
+    func request(parameters: T.Parameters) -> T.Response {
         let item = T(parameters: parameters)
         return item.intercept(parameters)
     }
@@ -43,7 +43,7 @@ extension Repository where T: LocalRequest {
 extension Repository where T: LocalRequest, T.Parameters == EmptyParameters {
 
     @discardableResult
-    func request(parameters: T.Parameters = .init()) -> T.Response? {
+    func request(parameters: T.Parameters = .init()) -> T.Response {
         let item = T(parameters: parameters)
         return item.intercept(parameters)
     }

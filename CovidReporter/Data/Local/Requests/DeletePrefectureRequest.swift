@@ -6,7 +6,7 @@ public struct DeletePrefecturesRequest: LocalRequest {
 
     var parameters: Prefecture
 
-    func intercept(_ parameter: Prefecture) -> EmptyResponse? {
+    func intercept(_ parameter: Prefecture) -> EmptyResponse {
         var prefectures =  LocalDataHolder.prefectures ?? []
         prefectures.removeAll(where: { $0 == parameter.rawValue })
         LocalDataHolder.prefectures = prefectures

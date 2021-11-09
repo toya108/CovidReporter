@@ -3,21 +3,7 @@ import Foundation
 
 protocol BarChartDataEntryConvertible {
     var dateForSource: Date { get }
-    var yData: Double { get }
-}
-
-extension Array where Element == BarChartDataEntryConvertible {
-    var oldestDate: Date {
-        self.first?.dateForSource ?? Date()
-    }
-
-    var latestDate: Date {
-        self.last?.dateForSource ?? Date()
-    }
-
-    var entries: [BarChartDataEntry] {
-        enumerated().map { .init(x: Double($0), y: $1.yData) }
-    }
+    var xData: Double { get }
 }
 
 extension AllInfectionNumbers: BarChartDataEntryConvertible {
@@ -25,7 +11,7 @@ extension AllInfectionNumbers: BarChartDataEntryConvertible {
         DateConverter.convert(from: self.date)
     }
 
-    var yData: Double {
+    var xData: Double {
         Double(self.adpatients)
     }
 }
@@ -35,7 +21,7 @@ extension InfectionNumberPerDay: BarChartDataEntryConvertible {
         DateConverter.convert(from: self.date)
     }
 
-    var yData: Double {
+    var xData: Double {
         Double(self.adpatients)
     }
 }
