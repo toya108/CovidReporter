@@ -25,13 +25,13 @@ struct VerticalBarChart: UIViewRepresentable {
         chart.rightAxis.enabled = false
         chart.legend.enabled = false
 
+        chart.data = data
+        chart.xAxis.valueFormatter = dataSource.dateValueFormatter
+
         return chart
     }
 
-    func updateUIView(_ uiView: BarChartView, context: Context) {
-        uiView.data = data
-        uiView.xAxis.valueFormatter = dataSource.dateValueFormatter
-    }
+    func updateUIView(_ uiView: BarChartView, context: Context) {}
 
     private var data: ChartData {
         let dataSet = BarChartDataSet(entries: dataSource.entries)
