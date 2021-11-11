@@ -4,9 +4,8 @@ import XCTest
 class GetAllInfectionNumbersTests: XCTestCase {
 
     func testGetAllInfectionNumbers() async throws {
-        let result = try await Repositories.InfectionNumbers.All.Get().request(
-            shouldUseTestData: true
-        )
+        let result = try await AnyRepository(Repositories.InfectionNumbers.All.GetMock())
+            .request(parameters: .init())
 
         XCTAssertEqual(result.count, 564)
 

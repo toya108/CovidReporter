@@ -1,15 +1,45 @@
 struct Repositories {
     struct InfectionNumbers {
         struct All {
-            typealias Get = Repository<GetAllInfectionNumbers>
+            struct Get: RepositoryProtocol {
+                typealias R = GetAllInfectionNumbersRequest
+            }
+            struct GetMock: RepositoryProtocol {
+                typealias R = GetAllInfectionNumbersRequest
+                func request(parameters: EmptyParameters) async throws -> [AllInfectionNumbers] {
+                    try await APIClient().request(
+                        request: R(),
+                        parameters: EmptyParameters(),
+                        shouldUseTestData: true
+                    )
+                }
+            }
         }
         struct Prefecture {
-            typealias Get = Repository<GetInfectionNumbers>
+            struct Get: RepositoryProtocol {
+                typealias R = GetInfectionNumbersRequest
+            }
+            struct GetMock: RepositoryProtocol {
+                typealias R = GetInfectionNumbersRequest
+                func request(parameters: EmptyParameters) async throws -> [AllInfectionNumbers] {
+                    try await APIClient().request(
+                        request: R(),
+                        parameters: .init(date: nil, dataName: nil),
+                        shouldUseTestData: true
+                    )
+                }
+            }
         }
     }
     struct Prefectures {
-        typealias Get = Repository<GetPrefecturesRequest>
-        typealias Set = Repository<SetPrefecturesRequest>
-        typealias Delete = Repository<DeletePrefecturesRequest>
+        struct Get: RepositoryProtocol {
+            typealias R = GetPrefecturesRequest
+        }
+        struct Set: RepositoryProtocol {
+            typealias R = SetPrefecturesRequest
+        }
+        struct Delete: RepositoryProtocol {
+            typealias R = DeletePrefecturesRequest
+        }
     }
 }

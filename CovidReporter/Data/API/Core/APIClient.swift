@@ -3,18 +3,19 @@ import Foundation
 struct APIClient {
     
     func request<R: APIRequestProtocol, T: Decodable>(
-        item: R,
+        request: R,
+        parameters: R.Parameters,
         shouldUseTestData: Bool
     ) async throws -> T {
 
         #if DEBUG
         if shouldUseTestData {
-            let testDataFetchRequest = FetchTestDataRequest(testDataJsonPath: item.testDataPath)
+            let testDataFetchRequest = FetchTestDataRequest(testDataJsonPath: request.testDataPath)
             return try testDataFetchRequest.fetchLocalTestData(responseType: T.self)
         }
         #endif
 
-        let urlRequest = try await createURLRequest(item)
+        let urlRequest = try await createURLRequest(request: request, parameters: parameters)
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
@@ -44,10 +45,13 @@ struct APIClient {
         }
     }
 
-    private func createURLRequest<R: APIRequestProtocol>(_ requestItem: R) async throws -> URLRequest {
+    private func createURLRequest<R: APIRequestProtocol>(
+        request: R,
+        parameters: R.Parameters
+    )async throws -> URLRequest {
         
         guard
-            let fullPath = URL(string: requestItem.baseURL + requestItem.path)
+            let fullPath = URL(string: request.baseURL + request.path)
         else {
             throw APIError.invalidRequest
         }
@@ -58,7 +62,7 @@ struct APIClient {
         urlComponents.host = fullPath.host
         urlComponents.path = fullPath.path
         urlComponents.port = fullPath.port
-        urlComponents.queryItems = requestItem.queryItems
+        urlComponents.queryItems = request.makeQueryItems(parameters: parameters)
 
         guard
             let url = urlComponents.url
@@ -67,12 +71,12 @@ struct APIClient {
         }
 
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = requestItem.method.rawValue
-        if .get != requestItem.method {
-            urlRequest.httpBody = try requestItem.body
+        urlRequest.httpMethod = request.method.rawValue
+        if .get != request.method {
+            urlRequest.httpBody = try request.makeBody(parameters: parameters)
         }
 
-        requestItem.headers.forEach {
+        request.headers.forEach {
             urlRequest.addValue($1, forHTTPHeaderField: $0)
         }
 

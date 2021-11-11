@@ -1,23 +1,22 @@
 struct AdpatientsCalculator {
     static func addAdpatients(
-        from infectionNumbers: [InfectionNumbers]
+        from itemList: [InfectionNumbers.Item]
     ) -> [InfectionNumberPerDay] {
-        infectionNumbers
+        itemList
             .enumerated()
             .reduce(into: [InfectionNumberPerDay]()) { array, enumeration in
 
+                let previousOffset = enumeration.offset - 1
                 guard
-                    let item = enumeration.element.itemList.first,
-                    infectionNumbers.indices.contains(enumeration.offset - 1),
-                    let previousItem = infectionNumbers[enumeration.offset - 1].itemList.first
+                    itemList.indices.contains(previousOffset)
                 else {
                     return
                 }
 
                 let perDay: InfectionNumberPerDay = .init(
-                    infectionNumber: Int(item.npatients) ?? 0,
-                    adpatients: (Int(item.npatients) ?? 0) - (Int(previousItem.npatients) ?? 0),
-                    date: item.date
+                    infectionNumber: Int(enumeration.element.npatients) ?? 0,
+                    adpatients: (Int(enumeration.element.npatients) ?? 0) - (Int(itemList[previousOffset].npatients) ?? 0),
+                    date: enumeration.element.date
                 )
                 array.append(perDay)
             }

@@ -1,51 +1,60 @@
-protocol RepositoryProtocol {}
+protocol RepositoryProtocol {
+    associatedtype R: RequestProtocol
+    func request(parameters: R.Parameters) async throws -> R.Response
+}
 
-struct Repository<T: RequestProtocol>: RepositoryProtocol {}
+struct AnyRepository<Request: RequestProtocol>: RepositoryProtocol {
+    typealias R = Request
 
-extension Repository where T: APIRequestProtocol {
+    private let _reguest: (Request.Parameters) async throws -> Request.Response
 
-    func request(
-        parameters: T.Parameters,
-        shouldUseTestData: Bool = false
-    ) async throws -> T.Response {
+    init<F: RepositoryProtocol>(_ base: F) where F.R == Request {
+        self._reguest = { try await base.request(parameters: $0)  }
+    }
+
+    func request(parameters: Request.Parameters) async throws -> Request.Response {
+        try await _reguest(parameters)
+    }
+}
+
+extension RepositoryProtocol where R: APIRequestProtocol {
+
+    func request(parameters: R.Parameters) async throws -> R.Response {
         try await APIClient().request(
-            item: T(parameters: parameters),
-            shouldUseTestData: shouldUseTestData
+            request: R(),
+            parameters: parameters,
+            shouldUseTestData: false
         )
     }
 
 }
 
-extension Repository where T: APIRequestProtocol, T.Parameters == EmptyParameters {
+extension RepositoryProtocol where R: APIRequestProtocol, R.Parameters == EmptyParameters {
 
-    func request(
-        parameters: T.Parameters = .init(),
-        shouldUseTestData: Bool = false
-    ) async throws -> T.Response {
+    func request(parameters: R.Parameters = .init()) async throws -> R.Response {
         try await APIClient().request(
-            item: T(parameters: parameters),
-            shouldUseTestData: shouldUseTestData
+            request: R(),
+            parameters: parameters,
+            shouldUseTestData: false
         )
     }
 
 }
 
-extension Repository where T: LocalRequest {
+extension RepositoryProtocol where R: LocalRequest {
 
     @discardableResult
-    func request(parameters: T.Parameters) -> T.Response {
-        let item = T(parameters: parameters)
-        return item.intercept(parameters)
+    func request(parameters: R.Parameters) -> R.Response {
+        R().intercept(parameters)
     }
 
 }
 
-extension Repository where T: LocalRequest, T.Parameters == EmptyParameters {
+extension RepositoryProtocol where R: LocalRequest, R.Parameters == EmptyParameters {
 
     @discardableResult
-    func request(parameters: T.Parameters = .init()) -> T.Response {
-        let item = T(parameters: parameters)
-        return item.intercept(parameters)
+    func request(parameters: R.Parameters = .init()) -> R.Response {
+        R().intercept(parameters)
     }
 
 }

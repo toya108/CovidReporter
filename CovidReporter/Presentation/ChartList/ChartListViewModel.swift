@@ -6,14 +6,14 @@ final class ChartListViewModel: ObservableObject {
     @Published var prefectures: [Prefecture] = []
     @Published var shouldShowSelectPrefecture = false
 
-    let getPrefecturesRepository: Repositories.Prefectures.Get
-    let setPrefecturesRepository: Repositories.Prefectures.Set
-    let deletePrefecturesRepository: Repositories.Prefectures.Delete
+    let getPrefecturesRepository: AnyRepository<GetPrefecturesRequest>
+    let setPrefecturesRepository: AnyRepository<SetPrefecturesRequest>
+    let deletePrefecturesRepository: AnyRepository<DeletePrefecturesRequest>
 
     init(
-        getPrefecturesRepository: Repositories.Prefectures.Get,
-        setPrefecturesRepository: Repositories.Prefectures.Set,
-        deletePrefecturesRepository: Repositories.Prefectures.Delete
+        getPrefecturesRepository: AnyRepository<GetPrefecturesRequest>,
+        setPrefecturesRepository: AnyRepository<SetPrefecturesRequest>,
+        deletePrefecturesRepository: AnyRepository<DeletePrefecturesRequest>
     ) {
         self.getPrefecturesRepository = getPrefecturesRepository
         self.setPrefecturesRepository = setPrefecturesRepository

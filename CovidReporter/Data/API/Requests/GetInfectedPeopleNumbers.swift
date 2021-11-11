@@ -1,20 +1,17 @@
 import Foundation
 
-struct GetInfectionNumbers: APIRequestProtocol {
+struct GetInfectionNumbersRequest: APIRequestProtocol {
+    var queryItems: [URLQueryItem]?
+
     typealias Response = InfectionNumbers
-    let parameters: Parameters
     var method: HTTPMethod { .get }
     var query: String? { "date" }
     var testDataPath: URL? {
         Bundle.main.url(forResource: "MockInfectionNumbers", withExtension: "json")
     }
-
-    init(parameters: Parameters) {
-        self.parameters = parameters
-    }
 }
 
-extension GetInfectionNumbers {
+extension GetInfectionNumbersRequest {
     struct Parameters: Codable {
         let date: String?
         let dataName: String?
