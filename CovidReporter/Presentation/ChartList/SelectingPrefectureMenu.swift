@@ -38,9 +38,9 @@ struct SelectingPrefectureMenu_Previews: PreviewProvider {
     static var previews: some View {
         SelectingPrefectureMenu(
             viewModel: .init(
-                getPrefecturesRepository: .init(),
-                setPrefecturesRepository: .init(),
-                deletePrefecturesRepository: .init()
+                getPrefecturesRepository: AnyRepository(Repositories.Prefectures.Get()),
+                setPrefecturesRepository: AnyRepository(Repositories.Prefectures.Set()),
+                deletePrefecturesRepository: AnyRepository(Repositories.Prefectures.Delete())
             )
         )
     }

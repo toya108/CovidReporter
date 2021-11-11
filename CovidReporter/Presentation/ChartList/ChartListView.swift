@@ -3,9 +3,9 @@ import SwiftUI
 struct ChartListView: View {
 
     @StateObject var viewModel = ChartListViewModel(
-        getPrefecturesRepository: .init(),
-        setPrefecturesRepository: .init(),
-        deletePrefecturesRepository: .init()
+        getPrefecturesRepository: AnyRepository(Repositories.Prefectures.Get()),
+        setPrefecturesRepository: AnyRepository(Repositories.Prefectures.Set()),
+        deletePrefecturesRepository: AnyRepository(Repositories.Prefectures.Delete())
     )
 
     var body: some View {

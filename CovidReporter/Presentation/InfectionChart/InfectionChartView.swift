@@ -81,9 +81,9 @@ struct InfectionChartView_Previews: PreviewProvider {
         InfectionChartView(
             prefecture: .all,
             parentViewModel: .init(
-                getPrefecturesRepository: .init(),
-                setPrefecturesRepository: .init(),
-                deletePrefecturesRepository: .init()
+                getPrefecturesRepository: AnyRepository(Repositories.Prefectures.Get()),
+                setPrefecturesRepository: AnyRepository(Repositories.Prefectures.Set()),
+                deletePrefecturesRepository: AnyRepository(Repositories.Prefectures.Delete())
             )
         )
     }

@@ -3,9 +3,6 @@ import Foundation
 protocol APIRequestProtocol: RequestProtocol {
     var headers: [String: String] { get }
     var method: HTTPMethod { get }
-    var parameters: Parameters { get }
-    var queryItems: [URLQueryItem]? { get }
-    var body: Data { get throws }
     var baseURL: String { get }
     var path: String { get }
 
@@ -13,7 +10,6 @@ protocol APIRequestProtocol: RequestProtocol {
     var testDataPath: URL? { get }
     #endif
 
-    init(parameters: Parameters)
 }
 
 extension APIRequestProtocol {
@@ -22,7 +18,7 @@ extension APIRequestProtocol {
         "https://opendata.corona.go.jp/api/Covid19JapanAll"
     }
 
-    var queryItems: [URLQueryItem]? {
+    func makeQueryItems(parameters: Parameters) -> [URLQueryItem]? {
         let query: [URLQueryItem]
 
         if let parameters = parameters as? [Encodable] {
@@ -43,10 +39,8 @@ extension APIRequestProtocol {
 
     var path: String { "" }
 
-    var body: Data {
-        get throws {
-            try JSONEncoder().encode(parameters)
-        }
+    func makeBody(parameters: Parameters) throws -> Data {
+        try JSONEncoder().encode(parameters)
     }
 
     var headers: [String: String] {
