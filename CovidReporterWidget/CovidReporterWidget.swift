@@ -7,8 +7,8 @@ struct Provider: IntentTimelineProvider {
 
     typealias Intent = ConfigurationIntent
 
-    private let getAllInfectionNumbersRepository = Repositories.InfectionNumbers.All.Get()
-    private let getInfectionNumbersRepository = Repositories.InfectionNumbers.Prefecture.Get()
+    private let getAllInfectionNumbersRepository = AnyRepository(Repositories.InfectionNumbers.All.Get())
+    private let getInfectionNumbersRepository = AnyRepository(Repositories.InfectionNumbers.Prefecture.Get())
 
     func placeholder(in context: Context) -> InfectionNumberChartEntry {
         InfectionNumberChartEntry(
