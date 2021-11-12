@@ -18,6 +18,16 @@ struct ChartListView: View {
                     }
                     SelectingPrefectureMenu(viewModel: viewModel)
                 }
+                .toolbar {
+                    NavigationLink(
+                        destination: {
+                            SettingsView()
+                        },
+                        label: {
+                            Image(systemName: "gear")
+                        }
+                    )
+                }
                 .navigationTitle("コロミル")
                 .navigationBarTitleDisplayMode(.inline)
 
