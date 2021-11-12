@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E29AD32273EB83D00016183 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29AD31273EB83D00016183 /* SettingsView.swift */; };
 		9E3306E32738134A0059E4A2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33068727380B600059E4A2 /* Intents.framework */; };
 		9E3306E62738134A0059E4A2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3306E52738134A0059E4A2 /* IntentHandler.swift */; };
 		9E3306EA2738134A0059E4A2 /* CovidReporterIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E3306E22738134A0059E4A2 /* CovidReporterIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -156,6 +157,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E29AD31273EB83D00016183 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9E33068727380B600059E4A2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		9E33069227380B600059E4A2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		9E3306E22738134A0059E4A2 /* CovidReporterIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CovidReporterIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E29AD30273EB82D00016183 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9E29AD31273EB83D00016183 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		9E3306E42738134A0059E4A2 /* CovidReporterIntentExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +444,7 @@
 		9E95B958273431E300844507 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9E29AD30273EB82D00016183 /* Settings */,
 				9EC5E086273636C6003D2FCB /* ChartList */,
 				9EC5E087273636D2003D2FCB /* InfectionChart */,
 				9EC5E088273636E5003D2FCB /* BarChart */,
@@ -829,6 +840,7 @@
 				9EC5E085273588BC003D2FCB /* InfectionChartViewModel.swift in Sources */,
 				9E95B9622734CC6500844507 /* DateGenerator.swift in Sources */,
 				9EC5E07C27357639003D2FCB /* BarChart.swift in Sources */,
+				9E29AD32273EB83D00016183 /* SettingsView.swift in Sources */,
 				9EBFB6812736795B006B26E2 /* GetPrefecturesRequest.swift in Sources */,
 				9EBFB68427367AB9006B26E2 /* UserDefaultsStorage.swift in Sources */,
 				9EEEF6E22736ADC8002F1585 /* RequestProtocol.swift in Sources */,
