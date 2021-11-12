@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E29AD32273EB83D00016183 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29AD31273EB83D00016183 /* SettingsView.swift */; };
+		9E29AD35273EC87C00016183 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD34273EC87C00016183 /* FirebaseAnalytics */; };
+		9E29AD37273EC87C00016183 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD36273EC87C00016183 /* FirebaseCrashlytics */; };
 		9E3306E32738134A0059E4A2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33068727380B600059E4A2 /* Intents.framework */; };
 		9E3306E62738134A0059E4A2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3306E52738134A0059E4A2 /* IntentHandler.swift */; };
 		9E3306EA2738134A0059E4A2 /* CovidReporterIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E3306E22738134A0059E4A2 /* CovidReporterIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -245,6 +247,8 @@
 			files = (
 				9E3306F4273823800059E4A2 /* SwiftUICharts in Frameworks */,
 				9EC5E07F2735796F003D2FCB /* Charts in Frameworks */,
+				9E29AD37273EC87C00016183 /* FirebaseCrashlytics in Frameworks */,
+				9E29AD35273EC87C00016183 /* FirebaseAnalytics in Frameworks */,
 				9EEEF6F82736D8DE002F1585 /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +616,8 @@
 				9EC5E07E2735796F003D2FCB /* Charts */,
 				9EEEF6F72736D8DE002F1585 /* SkeletonUI */,
 				9E3306F3273823800059E4A2 /* SwiftUICharts */,
+				9E29AD34273EC87C00016183 /* FirebaseAnalytics */,
+				9E29AD36273EC87C00016183 /* FirebaseCrashlytics */,
 			);
 			productName = CovidReporter;
 			productReference = 9E7569A62732BF8400E74936 /* CovidReporter.app */;
@@ -716,6 +722,7 @@
 				9EC5E07D2735796F003D2FCB /* XCRemoteSwiftPackageReference "Charts" */,
 				9EEEF6F62736D8DE002F1585 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 				9E3306F2273823800059E4A2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				9E29AD33273EC87C00016183 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9E7569A72732BF8400E74936 /* Products */;
 			projectDirPath = "";
@@ -747,6 +754,7 @@
 				9E7569AE2732BF8500E74936 /* Assets.xcassets in Resources */,
 				9EB392692736458C00A0B820 /* MockAllInfectionNumbers.json in Resources */,
 				9E95B9552734291700844507 /* MockInfectionNumbers.json in Resources */,
+				9E29AD3B273ECA8C00016183 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +844,7 @@
 				9E7569AA2732BF8400E74936 /* CovidReporterApp.swift in Sources */,
 				9EEEF6F02736C178002F1585 /* DeletePrefectureRequest.swift in Sources */,
 				9E7569E12732CCB500E74936 /* HTTPMethod.swift in Sources */,
+				9E29AD39273EC8F600016183 /* AppDelegate.swift in Sources */,
 				9E3306F0273816CE0059E4A2 /* IntentHandler.swift in Sources */,
 				9EC5E085273588BC003D2FCB /* InfectionChartViewModel.swift in Sources */,
 				9E95B9622734CC6500844507 /* DateGenerator.swift in Sources */,
@@ -1400,6 +1409,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9E29AD33273EC87C00016183 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.0;
+			};
+		};
 		9E3306F2273823800059E4A2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/willdale/SwiftUICharts.git";
@@ -1427,6 +1444,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9E29AD34273EC87C00016183 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E29AD33273EC87C00016183 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9E29AD36273EC87C00016183 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E29AD33273EC87C00016183 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		9E3306F3273823800059E4A2 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9E3306F2273823800059E4A2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
