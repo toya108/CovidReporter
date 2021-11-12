@@ -10,6 +10,7 @@
 		9E29AD32273EB83D00016183 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29AD31273EB83D00016183 /* SettingsView.swift */; };
 		9E29AD35273EC87C00016183 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD34273EC87C00016183 /* FirebaseAnalytics */; };
 		9E29AD37273EC87C00016183 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD36273EC87C00016183 /* FirebaseCrashlytics */; };
+		9E29AD39273EC8F600016183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29AD38273EC8F600016183 /* AppDelegate.swift */; };
 		9E29AD3B273ECA8C00016183 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */; };
 		9E3306E32738134A0059E4A2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33068727380B600059E4A2 /* Intents.framework */; };
 		9E3306E62738134A0059E4A2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3306E52738134A0059E4A2 /* IntentHandler.swift */; };
@@ -161,6 +162,7 @@
 
 /* Begin PBXFileReference section */
 		9E29AD31273EB83D00016183 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9E29AD38273EC8F600016183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E33068727380B600059E4A2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		9E33069227380B600059E4A2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
@@ -354,6 +356,7 @@
 				9E95B958273431E300844507 /* Presentation */,
 				9EC5E06F2735736A003D2FCB /* Resources */,
 				9E7569A92732BF8400E74936 /* CovidReporterApp.swift */,
+				9E29AD38273EC8F600016183 /* AppDelegate.swift */,
 				9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */,
 				9E7569AD2732BF8500E74936 /* Assets.xcassets */,
 				9E7569D82732CA3000E74936 /* Settings.bundle */,
