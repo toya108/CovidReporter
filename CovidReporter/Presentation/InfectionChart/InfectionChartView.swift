@@ -34,9 +34,8 @@ struct InfectionChartView: View {
                     HStack {
                         Text(prefecture.rawValue).fontWeight(.heavy)
                         Spacer()
-                        Text(
-                            "\(dataSource.latestDateString) 新規感染者数(\(Int(dataSource.latestAdpatients))人)"
-                        )
+                        Text("\(dataSource.latestDateString) 新規感染者数(\(Int(dataSource.latestAdpatients))人)")
+                            .font(.system(size: 12))
                         if prefecture != .all {
                             Button(
                                 action: {
