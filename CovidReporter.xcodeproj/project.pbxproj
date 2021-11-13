@@ -11,7 +11,6 @@
 		9E29AD35273EC87C00016183 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD34273EC87C00016183 /* FirebaseAnalytics */; };
 		9E29AD37273EC87C00016183 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E29AD36273EC87C00016183 /* FirebaseCrashlytics */; };
 		9E29AD39273EC8F600016183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29AD38273EC8F600016183 /* AppDelegate.swift */; };
-		9E29AD3B273ECA8C00016183 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */; };
 		9E3306E32738134A0059E4A2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33068727380B600059E4A2 /* Intents.framework */; };
 		9E3306E62738134A0059E4A2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3306E52738134A0059E4A2 /* IntentHandler.swift */; };
 		9E3306EA2738134A0059E4A2 /* CovidReporterIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E3306E22738134A0059E4A2 /* CovidReporterIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -163,7 +162,8 @@
 /* Begin PBXFileReference section */
 		9E29AD31273EB83D00016183 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9E29AD38273EC8F600016183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E29AD40273F4E5700016183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E29AD42273F4EA200016183 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E33068727380B600059E4A2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		9E33069227380B600059E4A2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		9E3306E22738134A0059E4A2 /* CovidReporterIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CovidReporterIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +293,31 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		9E29AD3D273F4DDD00016183 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9E29AD3F273F4DF000016183 /* Development */,
+				9E29AD3E273F4DE600016183 /* Release */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		9E29AD3E273F4DE600016183 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				9E29AD42273F4EA200016183 /* GoogleService-Info.plist */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		9E29AD3F273F4DF000016183 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				9E29AD40273F4E5700016183 /* GoogleService-Info.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
 		9E3306E42738134A0059E4A2 /* CovidReporterIntentExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,9 +380,9 @@
 				9EC5E071273573E2003D2FCB /* Entities */,
 				9E95B958273431E300844507 /* Presentation */,
 				9EC5E06F2735736A003D2FCB /* Resources */,
+				9E29AD3D273F4DDD00016183 /* Firebase */,
 				9E7569A92732BF8400E74936 /* CovidReporterApp.swift */,
 				9E29AD38273EC8F600016183 /* AppDelegate.swift */,
-				9E29AD3A273ECA8C00016183 /* GoogleService-Info.plist */,
 				9E7569AD2732BF8500E74936 /* Assets.xcassets */,
 				9E7569D82732CA3000E74936 /* Settings.bundle */,
 				9E7569AF2732BF8500E74936 /* Preview Content */,
@@ -610,6 +635,7 @@
 				9E7569A42732BF8400E74936 /* Resources */,
 				9E7569DA2732CA3B00E74936 /* Update Licenses */,
 				9EEEF71227376343002F1585 /* Embed App Extensions */,
+				9E29AD44273F4EC800016183 /* Firebase Plist Selection */,
 				9E29AD3C273F4C0A00016183 /* Crashlytics */,
 			);
 			buildRules = (
@@ -761,7 +787,6 @@
 				9E7569AE2732BF8500E74936 /* Assets.xcassets in Resources */,
 				9EB392692736458C00A0B820 /* MockAllInfectionNumbers.json in Resources */,
 				9E95B9552734291700844507 /* MockInfectionNumbers.json in Resources */,
-				9E29AD3B273ECA8C00016183 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +832,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${BUILD_DIR%Build/*}SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\n";
+		};
+		9E29AD44273F4EC800016183 /* Firebase Plist Selection */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Plist Selection";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFO_PLIST=GoogleService-Info.plist\nDEVELOPMENT_INFO_PLIST=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Development/${INFO_PLIST}\nRELEASE_INFO_PLIST=${PROJECT_DIR}/${TARGET_NAME}/Firebase/Release/${INFO_PLIST}\n\necho “Checking ${INFO_PLIST} in ${DEVELOPMENT_INFO_PLIST}”\n\nif [ ! -f $DEVELOPMENT_INFO_PLIST ] ; then\necho “Development GoogleService-Info.plist not found.”\nexit 1\nfi\n\necho “Checking ${INFO_PLIST} in ${RELEASE_INFO_PLIST}”\n\nif [ ! -f $RELEASE_INFO_PLIST ] ; then\necho “Release GoogleService-Info.plist not found.”\nexit 1\nfi\n\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho “Copying ${INFO_PLIST} to final destination: ${PLIST_DESTINATION}”\n\nif [ “${CONFIGURATION}” == “Release” ] ; then\necho “Copied ${RELEASE_INFO_PLIST}.”\ncp ${RELEASE_INFO_PLIST} ${PLIST_DESTINATION}\nelse\necho “Copied ${DEVELOPMENT_INFO_PLIST}.”\ncp ${DEVELOPMENT_INFO_PLIST} ${PLIST_DESTINATION}\nfi\n";
 		};
 		9E7569D52732C60700E74936 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
