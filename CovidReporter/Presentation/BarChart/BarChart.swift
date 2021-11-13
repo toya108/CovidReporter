@@ -35,6 +35,7 @@ struct VerticalBarChart: UIViewRepresentable {
 
     private var data: ChartData {
         let dataSet = BarChartDataSet(entries: dataSource.entries)
+        dataSet.highlightEnabled = false
         dataSet.colors = [.systemTeal]
         dataSet.valueFont = NSUIFont.systemFont(ofSize: 10)
         let data = BarChartData(dataSet: dataSet)
