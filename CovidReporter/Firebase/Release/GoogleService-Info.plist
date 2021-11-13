@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>161086238093-viclvgo9q2sde974smu3slck4dis5550.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.161086238093-viclvgo9q2sde974smu3slck4dis5550</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxwYnX1lORBD1ktDmg9QvGgPkQ5DTm3A4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>161086238093</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tk108gabalian-gmail.com.CovidReporter</string>
+	<key>PROJECT_ID</key>
+	<string>coromil-release</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coromil-release.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:161086238093:ios:3221a403432062377361c4</string>
+</dict>
+</plist>
