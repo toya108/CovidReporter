@@ -70,7 +70,9 @@ struct Provider: IntentTimelineProvider {
         }
     }
 
-    private func fetchInfectionNumbers(prefecture: Prefecture) async throws -> [BarChartDataEntryConvertible] {
+    private func fetchInfectionNumbers(
+        prefecture: Prefecture
+    ) async throws -> [BarChartDataEntryConvertible] {
         prefecture == .all
         ? try await fetchAllInfectionNumbers()
         : try await fetchInfectionNumbers(per: prefecture)
@@ -87,7 +89,7 @@ struct Provider: IntentTimelineProvider {
         let infectionNumbers = try await getInfectionNumbersRepository.request(
             parameters: .init(dataName: prefecture.rawValue)
         )
-        let eightDays = Array(infectionNumbers.itemList.prefix(8))
+        let eightDays = Array(infectionNumbers.itemList.prefix(8).reversed())
         return AdpatientsCalculator.addAdpatients(from: eightDays)
     }
 
