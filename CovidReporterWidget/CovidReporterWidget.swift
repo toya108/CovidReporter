@@ -70,7 +70,9 @@ struct Provider: IntentTimelineProvider {
         }
     }
 
-    private func fetchInfectionNumbers(prefecture: Prefecture) async throws -> [BarChartDataEntryConvertible] {
+    private func fetchInfectionNumbers(
+        prefecture: Prefecture
+    ) async throws -> [BarChartDataEntryConvertible] {
         prefecture == .all
         ? try await fetchAllInfectionNumbers()
         : try await fetchInfectionNumbers(per: prefecture)
