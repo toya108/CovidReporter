@@ -1,0 +1,244 @@
+{
+    "errorInfo": {
+        "errorFlag": "0",
+        "errorCode": null,
+        "errorMessage": null
+    },
+    "itemList": [
+        {
+            "date": "2021-11-01",
+            "name_jp": "北海道",
+            "npatients": "60752"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "青森県",
+            "npatients": "5894"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "岩手県",
+            "npatients": "3486"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "宮城県",
+            "npatients": "16266"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "秋田県",
+            "npatients": "1908"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "山形県",
+            "npatients": "3548"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "福島県",
+            "npatients": "9483"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "茨城県",
+            "npatients": "24403"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "栃木県",
+            "npatients": "15446"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "群馬県",
+            "npatients": "16789"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "埼玉県",
+            "npatients": "115612"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "千葉県",
+            "npatients": "100311"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "東京都",
+            "npatients": "381664"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "神奈川県",
+            "npatients": "168905"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "新潟県",
+            "npatients": "7992"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "富山県",
+            "npatients": "4867"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "石川県",
+            "npatients": "7963"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "福井県",
+            "npatients": "3113"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "山梨県",
+            "npatients": "5155"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "長野県",
+            "npatients": "8873"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "岐阜県",
+            "npatients": "19133"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "静岡県",
+            "npatients": "26747"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "愛知県",
+            "npatients": "106357"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "三重県",
+            "npatients": "14791"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "滋賀県",
+            "npatients": "12409"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "京都府",
+            "npatients": "35884"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "大阪府",
+            "npatients": "202473"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "兵庫県",
+            "npatients": "78459"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "奈良県",
+            "npatients": "15889"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "和歌山県",
+            "npatients": "5293"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "鳥取県",
+            "npatients": "1668"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "島根県",
+            "npatients": "1719"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "岡山県",
+            "npatients": "15306"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "広島県",
+            "npatients": "22065"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "山口県",
+            "npatients": "5740"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "徳島県",
+            "npatients": "3287"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "香川県",
+            "npatients": "4703"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "愛媛県",
+            "npatients": "5382"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "高知県",
+            "npatients": "4165"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "福岡県",
+            "npatients": "74438"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "佐賀県",
+            "npatients": "5854"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "長崎県",
+            "npatients": "6116"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "熊本県",
+            "npatients": "14392"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "大分県",
+            "npatients": "8186"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "宮崎県",
+            "npatients": "6151"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "鹿児島県",
+            "npatients": "9101"
+        },
+        {
+            "date": "2021-11-01",
+            "name_jp": "沖縄県",
+            "npatients": "50226"
+        }
+    ]
+}
